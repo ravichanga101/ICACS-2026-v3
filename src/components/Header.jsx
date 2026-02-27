@@ -7,30 +7,87 @@ import { Menu, X, ChevronDown } from "lucide-react";
 // Navigation data structure for better maintainability
 const navigationData = {
   aboutLinks: [
-    { href: "https://charusat.ac.in/", text: "CHARUSAT", target: "_blank" },
+    {
+      id: "about-charusat",
+      href: "https://charusat.ac.in/",
+      text: "CHARUSAT",
+      target: "_blank",
+    },
   ],
   icacsLinks: [
-    { href: "/#about", text: "About Conference" },
-    { href: "/#impdates", text: "Important Dates" },
-    { href: "/#cfp", text: "Call For Papers" },
-    { href: "/#tracks", text: "Conference Tracks" },
-    { href: "/#submission-guidelines", text: "Paper Submission Guidelines" },
-    { href: "/#registration", text: "Registration" },
-    // { href: "/#schedule", text: "Conference Schedule", target: "_blank" },
+    { id: "icacs-about", href: "/#about", text: "About Conference" },
+    { id: "icacs-dates", href: "/#impdates", text: "Important Dates" },
+    { id: "icacs-cfp", href: "/#cfp", text: "Call For Papers" },
+    { id: "icacs-tracks", href: "/#tracks", text: "Conference Tracks" },
+    {
+      id: "icacs-guidelines",
+      href: "/#submission-guidelines",
+      text: "Paper Submission Guidelines",
+    },
+    { id: "icacs-registration", href: "/#registration", text: "Registration" },
   ],
   committeeLinks: [
-    { href: "/#orgcmt", text: "Organizing Committee" },
-    { href: "/#advisory-committee", text: "Advisory Committee" },
+    { id: "committee-org", href: "/#orgcmt", text: "Organizing Committee" },
     {
+      id: "committee-advisory",
+      href: "/#advisory-committee",
+      text: "Advisory Committee",
+    },
+    {
+      id: "committee-tpc",
       href: "/#technical-program-committee",
       text: "Technical Program Committee",
     },
     {
+      id: "committee-trc",
       href: "/#technical-review-committee",
       text: "Technical Review Committee",
     },
   ],
 };
+
+// Dropdown menu component for desktop (moved outside to prevent re-renders)
+const DesktopDropdown = ({ title, links, className = "" }) => (
+  <div className={`relative group ${className}`}>
+    <button className="flex items-center text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md group-hover:bg-gray-50 transition">
+      {title} <ChevronDown className="ml-1" size={16} />
+    </button>
+    <div className="absolute left-0 top-full bg-white shadow-lg rounded-md hidden group-hover:block min-w-[200px] z-50 border border-gray-100 pt-3 mt-[-1px]">
+      <div className="py-1">
+        {links.map((link) => (
+          <Link
+            key={link.id}
+            href={link.href}
+            target={link.target || "_self"}
+            className="block px-4 py-2 hover:bg-gray-50 text-gray-700 text-sm"
+          >
+            {link.text}
+          </Link>
+        ))}
+      </div>
+    </div>
+  </div>
+);
+
+// Mobile menu section component (moved outside to prevent re-renders)
+const MobileMenuSection = ({ title, links, onLinkClick }) => (
+  <div className="border-b border-gray-100 pb-2">
+    <div className="font-medium text-[#1869b4] py-2">{title}</div>
+    <div className="pl-4 flex flex-col space-y-1 text-sm">
+      {links.map((link) => (
+        <Link
+          key={link.id}
+          href={link.href}
+          target={link.target || "_self"}
+          className="py-2 text-gray-700 hover:text-[#fd7e14]"
+          onClick={onLinkClick}
+        >
+          {link.text}
+        </Link>
+      ))}
+    </div>
+  </div>
+);
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -39,11 +96,7 @@ export default function Header() {
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -66,48 +119,7 @@ export default function Header() {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [mobileOpen]);
 
-  // Dropdown menu component for desktop
-  const DesktopDropdown = ({ title, links, className }) => (
-    <div className={`relative group ${className || ""}`}>
-      <button className="flex items-center text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md group-hover:bg-gray-50 transition">
-        {title} <ChevronDown className="ml-1" size={16} />
-      </button>
-      <div className="absolute left-0 top-full bg-white shadow-lg rounded-md hidden group-hover:block min-w-[200px] z-50 border border-gray-100 pt-3 mt-[-1px]">
-        <div className="py-1">
-          {links.map((link, index) => (
-            <Link
-              key={index}
-              href={link.href}
-              target={link.target || "_self"}
-              className="block px-4 py-2 hover:bg-gray-50 text-gray-700 text-sm"
-            >
-              {link.text}
-            </Link>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-
-  // Mobile menu section component
-  const MobileMenuSection = ({ title, links }) => (
-    <div className="border-b border-gray-100 pb-2">
-      <div className="font-medium text-[#1869b4] py-2">{title}</div>
-      <div className="pl-4 flex flex-col space-y-1 text-sm">
-        {links.map((link, index) => (
-          <Link
-            key={index}
-            href={link.href}
-            target={link.target || "_self"}
-            className="py-2 text-gray-700 hover:text-[#fd7e14]"
-            onClick={() => setMobileOpen(false)}
-          >
-            {link.text}
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
+  const handleMobileLinkClick = () => setMobileOpen(false);
 
   return (
     <header
@@ -146,7 +158,7 @@ export default function Header() {
             href="/#speakers"
             className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
           >
-            Keynote Speakers
+            Speakers
           </Link>
 
           <Link
@@ -154,6 +166,12 @@ export default function Header() {
             className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
           >
             Publication
+          </Link>
+          <Link
+            href="/#previous-proceedings"
+            className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
+          >
+            Previous Proceedings
           </Link>
 
           <Link
@@ -213,40 +231,49 @@ export default function Header() {
               <MobileMenuSection
                 title="About"
                 links={navigationData.aboutLinks}
+                onLinkClick={handleMobileLinkClick}
               />
 
               {/* ICACS 2026 Section */}
               <MobileMenuSection
                 title="ICACS 2026"
                 links={navigationData.icacsLinks}
+                onLinkClick={handleMobileLinkClick}
               />
 
               {/* Direct Links */}
               <Link
                 href="/gallery"
                 className="py-2 font-medium text-[#1869b4] hover:text-[#fd7e14] border-b border-gray-100"
-                onClick={() => setMobileOpen(false)}
+                onClick={handleMobileLinkClick}
               >
                 Gallery
               </Link>
               <Link
                 href="/publication"
                 className="py-2 font-medium text-[#1869b4] hover:text-[#fd7e14] border-b border-gray-100"
-                onClick={() => setMobileOpen(false)}
+                onClick={handleMobileLinkClick}
               >
                 Publication
               </Link>
               <Link
+                href="/#previous-proceedings"
+                className="py-2 font-medium text-[#1869b4] hover:text-[#fd7e14] border-b border-gray-100"
+                onClick={handleMobileLinkClick}
+              >
+                Previous Proceedings
+              </Link>
+              <Link
                 href="/#speakers"
                 className="py-2 font-medium text-[#1869b4] hover:text-[#fd7e14] border-b border-gray-100"
-                onClick={() => setMobileOpen(false)}
+                onClick={handleMobileLinkClick}
               >
                 Keynote Speakers
               </Link>
               <Link
                 href="/#editors"
                 className="py-2 font-medium text-[#1869b4] hover:text-[#fd7e14] border-b border-gray-100"
-                onClick={() => setMobileOpen(false)}
+                onClick={handleMobileLinkClick}
               >
                 Editors
               </Link>
@@ -255,12 +282,13 @@ export default function Header() {
               <MobileMenuSection
                 title="Committee"
                 links={navigationData.committeeLinks}
+                onLinkClick={handleMobileLinkClick}
               />
 
               <Link
                 href="/#contact"
                 className="py-2 font-medium text-[#1869b4] hover:text-[#fd7e14] border-b border-gray-100"
-                onClick={() => setMobileOpen(false)}
+                onClick={handleMobileLinkClick}
               >
                 Contact
               </Link>
@@ -269,7 +297,7 @@ export default function Header() {
               <Link
                 href="/#registration"
                 className="mt-3 py-3 px-4 text-center font-bold bg-gradient-to-r from-[#fd7e14] to-orange-600 text-white rounded-lg shadow-md"
-                onClick={() => setMobileOpen(false)}
+                onClick={handleMobileLinkClick}
               >
                 Register
               </Link>

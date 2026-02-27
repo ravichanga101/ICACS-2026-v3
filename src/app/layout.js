@@ -7,11 +7,15 @@ import Footer from "../components/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+  preload: false,
 });
 
 export const metadata = {
@@ -19,6 +23,21 @@ export const metadata = {
     "ICACS 2026 - International Conference on Artificial Intelligence, Communication Technologies & Smart Cities",
   description:
     "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities - 2026",
+  keywords:
+    "ICACS, AI, Communication Technologies, Smart Cities, Conference 2026",
+  authors: [{ name: "CHARUSAT" }],
+  openGraph: {
+    title: "ICACS 2026",
+    description:
+      "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities",
+    type: "website",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({ children }) {

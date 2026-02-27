@@ -51,9 +51,9 @@ export default function PreviousProceedings() {
 
         {/* Proceedings Cards */}
         <div className="flex justify-center max-w-7xl mx-auto">
-          {proceedings.map((proceeding, index) => (
+          {proceedings.map((proceeding) => (
             <div
-              key={index}
+              key={proceeding.year}
               className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 group hover:scale-105 transform w-full max-w-md"
             >
               {/* Card Header */}

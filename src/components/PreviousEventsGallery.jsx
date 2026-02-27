@@ -249,32 +249,43 @@ export default function PreviousEventsGallery() {
     },
   ];
 
-  // Initialize GLightbox
+  // Initialize GLightbox with optimized settings and error handling
   useEffect(() => {
-    let lightboxInstance;
+    let lightboxInstance = null;
 
     const loadGLightbox = async () => {
-      const glightboxModule = await import("glightbox");
-      const GLightbox = glightboxModule.default;
-      lightboxInstance = new GLightbox({
-        selector: ".glightbox-image",
-        touchNavigation: true,
-        loop: true,
-        autoplayVideos: true,
-        plyr: {
-          config: {
-            ratio: "16:9",
-          },
-        },
-      });
+      try {
+        const glightboxModule = await import("glightbox");
+        const GLightbox = glightboxModule.default;
+
+        lightboxInstance = new GLightbox({
+          selector: ".glightbox-image",
+          touchNavigation: true,
+          loop: true,
+          autoplayVideos: false,
+          preload: true,
+          openEffect: "fade",
+          closeEffect: "fade",
+          slideEffect: "slide",
+          moreLength: 0,
+          videosWidth: "100%",
+        });
+      } catch (error) {
+        console.error("Failed to load GLightbox:", error);
+      }
     };
 
-    // Small delay to ensure DOM is fully rendered
+    // Delay to ensure DOM is ready
     const timer = setTimeout(loadGLightbox, 100);
+
     return () => {
       clearTimeout(timer);
       if (lightboxInstance) {
-        lightboxInstance.destroy();
+        try {
+          lightboxInstance.destroy();
+        } catch (error) {
+          console.error("Error destroying GLightbox:", error);
+        }
       }
     };
   }, []);
@@ -314,9 +325,6 @@ export default function PreviousEventsGallery() {
             <div
               key={image.id}
               className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-gray-200 aspect-video"
-              style={{
-                animationDelay: `${index * 50}ms`,
-              }}
             >
               {/* Optimized Image with WebP support */}
               <a
@@ -328,10 +336,12 @@ export default function PreviousEventsGallery() {
                   <source srcSet={image.webp} type="image/webp" />
                   <source srcSet={image.jpg} type="image/jpeg" />
                   <img
-                    src={image.jpg}
+                    src={image.thumb || image.jpg}
                     alt={image.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    loading="lazy"
+                    loading={index < 4 ? "eager" : "lazy"}
+                    decoding="async"
+                    fetchPriority={index < 4 ? "high" : "auto"}
                   />
                 </picture>
               </a>
