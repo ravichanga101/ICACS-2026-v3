@@ -128,6 +128,12 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center space-x-1">
+          <Link
+            href="./"
+            className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
+          >
+            Home
+          </Link>
           {/* About Dropdown */}
           <DesktopDropdown title="About" links={navigationData.aboutLinks} />
 
@@ -136,13 +142,11 @@ export default function Header() {
             title="ICACS 2026"
             links={navigationData.icacsLinks}
           />
-
-          {/* Standard links */}
           <Link
-            href="/gallery"
+            href="/#speakers"
             className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
           >
-            Gallery
+            Keynote Speakers
           </Link>
 
           <Link
@@ -150,13 +154,6 @@ export default function Header() {
             className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
           >
             Publication
-          </Link>
-
-          <Link
-            href="/#speakers"
-            className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
-          >
-            Keynote Speakers
           </Link>
 
           <Link
@@ -171,7 +168,13 @@ export default function Header() {
             title="Committee"
             links={navigationData.committeeLinks}
           />
-
+          {/* Standard links */}
+          <Link
+            href="/gallery"
+            className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
+          >
+            Gallery
+          </Link>
           <Link
             href="/#contact"
             className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"

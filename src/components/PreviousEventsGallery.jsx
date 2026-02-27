@@ -1,10 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 export default function PreviousEventsGallery() {
-  const [glightbox, setGlightbox] = useState(null);
-
   // Gallery images data - using optimized images
   const galleryImages = [
     {
@@ -251,14 +249,14 @@ export default function PreviousEventsGallery() {
     },
   ];
 
-  const [activeFilter, setActiveFilter] = useState("all");
-  const [filteredImages, setFilteredImages] = useState(galleryImages);
-
   // Initialize GLightbox
   useEffect(() => {
+    let lightboxInstance;
+
     const loadGLightbox = async () => {
-      const { GLightbox } = await import("glightbox");
-      const lightbox = new GLightbox({
+      const glightboxModule = await import("glightbox");
+      const GLightbox = glightboxModule.default;
+      lightboxInstance = new GLightbox({
         selector: ".glightbox-image",
         touchNavigation: true,
         loop: true,
@@ -269,51 +267,17 @@ export default function PreviousEventsGallery() {
           },
         },
       });
-      setGlightbox(lightbox);
     };
 
     // Small delay to ensure DOM is fully rendered
     const timer = setTimeout(loadGLightbox, 100);
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      if (lightboxInstance) {
+        lightboxInstance.destroy();
+      }
+    };
   }, []);
-
-  // Update lightbox when filtered images change
-  useEffect(() => {
-    if (glightbox) {
-      // Destroy and reinitialize to capture new elements
-      glightbox.destroy();
-      setTimeout(() => {
-        const { GLightbox } = require("glightbox");
-        const newLightbox = new GLightbox({
-          selector: ".glightbox-image",
-          touchNavigation: true,
-          loop: true,
-          autoplayVideos: true,
-        });
-        setGlightbox(newLightbox);
-      }, 100);
-    }
-  }, [filteredImages]);
-
-  // Filter images
-  const handleFilter = (category) => {
-    setActiveFilter(category);
-    if (category === "all") {
-      setFilteredImages(galleryImages);
-    } else {
-      setFilteredImages(
-        galleryImages.filter((img) => img.category === category),
-      );
-    }
-  };
-
-  const categories = [
-    { value: "all", label: "All Photos" },
-    { value: "ceremony", label: "Ceremony" },
-    { value: "keynote", label: "Keynote" },
-    { value: "session", label: "Sessions" },
-    { value: "audience", label: "Audience" },
-  ];
 
   return (
     <section
@@ -344,26 +308,9 @@ export default function PreviousEventsGallery() {
           </p>
         </div>
 
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-10">
-          {categories.map((cat) => (
-            <button
-              key={cat.value}
-              onClick={() => handleFilter(cat.value)}
-              className={`px-4 md:px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
-                activeFilter === cat.value
-                  ? "bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg"
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-          {filteredImages.map((image, index) => (
+          {galleryImages.map((image, index) => (
             <div
               key={image.id}
               className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-gray-200 aspect-video"
@@ -376,8 +323,6 @@ export default function PreviousEventsGallery() {
                 href={image.webp}
                 className="glightbox-image block w-full h-full cursor-pointer"
                 data-gallery="conference-gallery"
-                data-description={image.title}
-                title={image.title}
               >
                 <picture>
                   <source srcSet={image.webp} type="image/webp" />
@@ -389,73 +334,9 @@ export default function PreviousEventsGallery() {
                     loading="lazy"
                   />
                 </picture>
-
-                {/* Overlay on Hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3 md:p-4">
-                  <div>
-                    <h3 className="text-white font-bold text-sm md:text-base line-clamp-2">
-                      {image.title}
-                    </h3>
-                    <div className="flex items-center mt-1">
-                      <svg
-                        className="w-4 h-4 text-[#fd7e14] mr-1"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-xs text-gray-300">
-                        Click to view
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Icon */}
-                <div className="absolute top-2 right-2 bg-white/20 backdrop-blur-md rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg
-                    className="w-5 h-5 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"
-                    />
-                  </svg>
-                </div>
               </a>
             </div>
           ))}
-        </div>
-
-        {/* Stats Section */}
-        <div className="mt-16 pt-12 border-t border-gray-300">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-              <div className="text-3xl font-bold text-blue-600">22+</div>
-              <p className="text-gray-600 text-sm mt-1">Photos</p>
-            </div>
-            <div className="text-center p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors">
-              <div className="text-3xl font-bold text-[#fd7e14]">100+</div>
-              <p className="text-gray-600 text-sm mt-1">Attendees</p>
-            </div>
-            <div className="text-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
-              <div className="text-3xl font-bold text-green-600">12+</div>
-              <p className="text-gray-600 text-sm mt-1">Sessions</p>
-            </div>
-            <div className="text-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
-              <div className="text-3xl font-bold text-purple-600">2025</div>
-              <p className="text-gray-600 text-sm mt-1">Event Year</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

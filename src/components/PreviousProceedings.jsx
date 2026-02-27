@@ -10,12 +10,14 @@ export default function PreviousProceedings() {
       year: "2025",
       title: "ICACS 2025 - Proceedings",
       description:
-        "International Conference on Advanced Computer Science and Information Systems",
+        "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities",
       publisher: "Springer",
       series: "Lecture Notes in Networks and Systems",
-      doi: "10.1007/978-XXX-XXXXX-X",
-      link: "#",
-      isbn: "978-XXX-XXXXX-X",
+      doi: "10.1007/978-981-96-9196-8",
+      link: "https://link.springer.com/book/10.1007/978-981-96-9196-8",
+      isbn: "978-981-96-9196-8",
+      coverImage:
+        "https://media.springernature.com/full/springer-static/cover-hires/book/978-981-96-9196-8?as=webp",
       papers: 45,
       pages: 520,
     },
@@ -70,7 +72,15 @@ export default function PreviousProceedings() {
 
               {/* Card Body */}
               <div className="p-6">
-                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                <div className="mb-6 flex justify-center">
+                  <img
+                    src={proceeding.coverImage}
+                    alt={`${proceeding.title} cover`}
+                    className="h-80 w-auto rounded-md border border-gray-100 shadow-sm"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed text-center">
                   {proceeding.description}
                 </p>
 
@@ -119,22 +129,6 @@ export default function PreviousProceedings() {
                   </div>
                 </div>
 
-                {/* Stats */}
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="bg-blue-50 rounded-lg p-3 text-center">
-                    <div className="text-2xl font-bold text-blue-600">
-                      {proceeding.papers}
-                    </div>
-                    <div className="text-xs text-gray-600 mt-1">Papers</div>
-                  </div>
-                  <div className="bg-orange-50 rounded-lg p-3 text-center">
-                    <div className="text-2xl font-bold text-[#fd7e14]">
-                      {proceeding.pages}
-                    </div>
-                    <div className="text-xs text-gray-600 mt-1">Pages</div>
-                  </div>
-                </div>
-
                 {/* Action Button */}
                 <a
                   href={proceeding.link}
@@ -150,27 +144,6 @@ export default function PreviousProceedings() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Additional Info */}
-        <div className="mt-12 text-center">
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg max-w-4xl mx-auto">
-            <div className="flex items-start">
-              <BookOpen className="w-6 h-6 text-blue-600 mr-3 mt-1 flex-shrink-0" />
-              <div className="text-left">
-                <h4 className="font-bold text-gray-800 mb-2 text-lg">
-                  About Our Proceedings
-                </h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  All ICACS conference papers are published in prestigious
-                  indexed journals and conference proceedings. Our publications
-                  are indexed in major databases including Scopus, Web of
-                  Science, and Google Scholar, ensuring maximum visibility and
-                  impact for your research work.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
