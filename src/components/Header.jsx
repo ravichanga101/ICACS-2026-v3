@@ -146,8 +146,6 @@ export default function Header() {
           >
             Home
           </Link>
-          {/* About Dropdown */}
-          <DesktopDropdown title="About" links={navigationData.aboutLinks} />
 
           {/* ICACS 2026 Dropdown */}
           <DesktopDropdown
@@ -194,6 +192,12 @@ export default function Header() {
             Gallery
           </Link>
           <Link
+            href="/downloads"
+            className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
+          >
+            Downloads
+          </Link>
+          <Link
             href="/#contact"
             className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
           >
@@ -228,11 +232,6 @@ export default function Header() {
           <div className="container mx-auto px-4 py-3">
             <div className="flex flex-col space-y-1">
               {/* About Section */}
-              <MobileMenuSection
-                title="About"
-                links={navigationData.aboutLinks}
-                onLinkClick={handleMobileLinkClick}
-              />
 
               {/* ICACS 2026 Section */}
               <MobileMenuSection
@@ -276,6 +275,14 @@ export default function Header() {
                 onClick={handleMobileLinkClick}
               >
                 Editors
+              </Link>
+
+              <Link
+                href="/downloads"
+                className="py-2 font-medium text-[#1869b4] hover:text-[#fd7e14] border-b border-gray-100"
+                onClick={handleMobileLinkClick}
+              >
+                Downloads
               </Link>
 
               {/* Committee Section */}
