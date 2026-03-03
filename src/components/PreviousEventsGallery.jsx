@@ -258,6 +258,8 @@ export default function PreviousEventsGallery() {
       title: "Making GenAI work for Intelligent Systems",
       date: "1 March 2025",
       youtubeLink: "https://youtu.be/7haz5qdNdPo",
+      thumbnail:
+        "/assets/img/previous-events/2025/optimized/thumbnails/keynote/keynote-AI-recording.png",
     },
     {
       id: 2,
@@ -267,6 +269,8 @@ export default function PreviousEventsGallery() {
       title: "The bigger, The better?",
       date: "1 March 2025",
       youtubeLink: "https://youtu.be/URJ8hyU8zVk",
+      thumbnail:
+        "/assets/img/previous-events/2025/optimized/thumbnails/keynote/keynote-CommunicationTechnologies-recording.png",
     },
     {
       id: 3,
@@ -276,6 +280,8 @@ export default function PreviousEventsGallery() {
         "Exploring Contemporary Themes in Smart Cities: A Structural Engineering Perspective",
       date: "1 March 2025",
       youtubeLink: "https://youtu.be/EMH2W4PACEU",
+      thumbnail:
+        "/assets/img/previous-events/2025/optimized/thumbnails/keynote/Keynote-SmartCities-recording.png",
     },
   ];
 
@@ -289,10 +295,10 @@ export default function PreviousEventsGallery() {
         const GLightbox = glightboxModule.default;
 
         lightboxInstance = new GLightbox({
-          selector: ".glightbox-image",
+          selector: ".glightbox-image, .glightbox-video",
           touchNavigation: true,
           loop: true,
-          autoplayVideos: false,
+          autoplayVideos: true,
           preload: true,
           openEffect: "fade",
           closeEffect: "fade",
@@ -393,38 +399,51 @@ export default function PreviousEventsGallery() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {keynoteAddresses.map((keynote) => (
+            {keynoteAddresses.map((keynote, index) => (
               <div
                 key={keynote.id}
-                className="bg-white rounded-lg overflow-hidden shadow-md border-l-4 border-[#fd7e14] hover:shadow-xl transition-shadow duration-300"
+                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-gray-900"
               >
-                <div className="p-6">
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                    {keynote.name}
-                  </h4>
-                  <p className="text-sm text-gray-600 mb-3">
-                    {keynote.affiliation}
-                  </p>
-                  <p className="text-sm font-medium text-blue-700 mb-4">
-                    "{keynote.title}"
-                  </p>
-                  <p className="text-xs text-gray-500 mb-4">{keynote.date}</p>
-                  <a
-                    href={keynote.youtubeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200"
-                  >
-                    <svg
-                      className="w-4 h-4"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                    </svg>
-                    Watch on YouTube
-                  </a>
-                </div>
+                <a
+                  href={keynote.youtubeLink}
+                  className="glightbox-video block relative cursor-pointer"
+                  data-gallery="keynote-videos"
+                  data-title={`${keynote.name} - ${keynote.title}`}
+                  data-description={`${keynote.affiliation} | ${keynote.date}`}
+                >
+                  {/* Thumbnail Image */}
+                  <div className="relative aspect-video">
+                    <img
+                      src={keynote.thumbnail}
+                      alt={`${keynote.name} - ${keynote.title}`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading={index < 3 ? "eager" : "lazy"}
+                    />
+
+                    {/* Play Button Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-50 transition-all duration-300">
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-red-600 group-hover:bg-red-700 group-hover:scale-110 transition-all duration-300 shadow-xl">
+                        <svg
+                          className="w-8 h-8 sm:w-10 sm:h-10 text-white ml-1"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Info Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-4 text-white">
+                    <h4 className="text-sm sm:text-base font-semibold mb-1 line-clamp-2">
+                      {keynote.name}
+                    </h4>
+                    <p className="text-xs opacity-90 line-clamp-1">
+                      {keynote.affiliation}
+                    </p>
+                  </div>
+                </a>
               </div>
             ))}
           </div>

@@ -14,7 +14,6 @@ import OrganizingCommittee from "../components/OrganizingCommittee";
 import SDG from "../components/SDG";
 import ContactUs from "../components/ContactUs";
 import ConferenceDescription from "../components/ConferenceDescription";
-import PreviousProceedings from "../components/PreviousProceedings";
 import ScrollToTop from "../components/ScrollToTop";
 import LeftSideImportantDatesButton from "../components/LeftSideImportantDatesButton";
 
@@ -29,7 +28,6 @@ export default function Home() {
       <Tracks />
       <SubmissionGuidelines />
       <Registration />
-      <PreviousProceedings />
       <KeynoteSpeakers />
       <Editors />
       <OrganizingCommittee />

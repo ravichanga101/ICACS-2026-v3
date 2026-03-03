@@ -166,7 +166,7 @@ export default function Header() {
             Publication
           </Link>
           <Link
-            href="/#previous-proceedings"
+            href="/previous-proceedings"
             className="text-[#1869b4] hover:text-[#fd7e14] font-medium px-3 py-2 rounded-md hover:bg-gray-50 transition"
           >
             Previous Proceedings
@@ -256,7 +256,7 @@ export default function Header() {
                 Publication
               </Link>
               <Link
-                href="/#previous-proceedings"
+                href="/previous-proceedings"
                 className="py-2 font-medium text-[#1869b4] hover:text-[#fd7e14] border-b border-gray-100"
                 onClick={handleMobileLinkClick}
               >
