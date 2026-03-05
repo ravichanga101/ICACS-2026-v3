@@ -282,7 +282,9 @@ export default function Registration() {
         {/* Registration Button */}
         <div className="text-center">
           <a
-            href="#"
+            href="https://forms.gle/oub17amUCxDoLm1s8"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             <FileText className="w-5 h-5 mr-2" />
@@ -290,7 +292,7 @@ export default function Registration() {
             <ExternalLink className="w-4 h-4 ml-2" />
           </a>
           <p className="text-gray-600 text-sm mt-4">
-            Registration will open after paper acceptance notification
+            Click the button above to complete your conference registration
           </p>
         </div>
       </div>
