@@ -240,8 +240,7 @@ export default function Registration() {
                   Bank Transfer
                 </h4>
                 <p className="text-sm text-gray-600">
-                  NEFT/RTGS/IMPS (Account details will be provided after
-                  abstract acceptance)
+                  NEFT/RTGS/IMPS (Use the bank details provided below)
                 </p>
               </div>
               <div className="p-4 bg-purple-50 rounded-lg">
@@ -251,6 +250,75 @@ export default function Registration() {
                 <p className="text-sm text-gray-600">
                   Wire Transfer, PayPal (Additional charges may apply)
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Payment Details */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+              <CreditCard className="w-6 h-6 text-blue-600 mr-2" />
+              Payment Details
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="p-4 bg-blue-50 rounded-lg">
+                <p className="text-sm text-gray-600">Bank A/c Number</p>
+                <p className="font-semibold text-gray-800">30875081005</p>
+              </div>
+              <div className="p-4 bg-blue-50 rounded-lg">
+                <p className="text-sm text-gray-600">Bank A/c Type</p>
+                <p className="font-semibold text-gray-800">Current A/c</p>
+              </div>
+              <div className="p-4 bg-blue-50 rounded-lg md:col-span-2">
+                <p className="text-sm text-gray-600">Bank A/c Name</p>
+                <p className="font-semibold text-gray-800">
+                  Charotar University of Science & Technology
+                </p>
+              </div>
+              <div className="p-4 bg-blue-50 rounded-lg md:col-span-2">
+                <p className="text-sm text-gray-600">Bank Branch Address</p>
+                <p className="font-semibold text-gray-800">
+                  Darshan Hostel, Changa-Valetva Road, Changa, Dist. Anand
+                </p>
+              </div>
+              <div className="p-4 bg-blue-50 rounded-lg md:col-span-2">
+                <p className="text-sm text-gray-600">Bank Telephone No.</p>
+                <p className="font-semibold text-gray-800">
+                  (02697) 248540, (M) 7600037508
+                </p>
+              </div>
+              <div className="p-4 bg-blue-50 rounded-lg md:col-span-2">
+                <p className="text-sm text-gray-600">Bank Email ID</p>
+                <p className="font-semibold text-gray-800">
+                  sbil0961@sbi.co.in
+                </p>
+              </div>
+              <div className="p-4 bg-blue-50 rounded-lg">
+                <p className="text-sm text-gray-600">Bank Branch Code</p>
+                <p className="font-semibold text-gray-800">10961</p>
+              </div>
+              <div className="p-4 bg-blue-50 rounded-lg">
+                <p className="text-sm text-gray-600">Bank MICR Code</p>
+                <p className="font-semibold text-gray-800">388002502</p>
+              </div>
+              <div className="p-4 bg-blue-50 rounded-lg">
+                <p className="text-sm text-gray-600">Bank IFSC Code</p>
+                <p className="font-semibold text-gray-800">SBIN0010961</p>
+              </div>
+              <div className="p-4 bg-blue-50 rounded-lg">
+                <p className="text-sm text-gray-600">Bank Swift Code</p>
+                <p className="font-semibold text-gray-800">SBIN INBB718</p>
+              </div>
+              <div className="p-4 bg-green-50 rounded-lg">
+                <p className="text-sm text-gray-600">PAN</p>
+                <p className="font-semibold text-gray-800">AABTC1178Q</p>
+              </div>
+              <div className="p-4 bg-green-50 rounded-lg">
+                <p className="text-sm text-gray-600">GST</p>
+                <p className="font-semibold text-gray-800">24AABTC1178Q1ZG</p>
               </div>
             </div>
           </div>
