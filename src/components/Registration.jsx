@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import {
-  Users,
-  Calendar,
   CheckCircle,
   CreditCard,
   FileText,
@@ -12,66 +10,18 @@ import {
 } from "lucide-react";
 
 export default function Registration() {
-  const [activeTab, setActiveTab] = useState("domestic");
-
-  // Registration categories with pricing
-  const domesticRates = [
+  const registrationFees = [
     {
-      category: "Early Bird Registration",
-      deadline: "March 31, 2026",
-      rates: [
-        { type: "Academicians/Research Scholars", price: "₹6,000" },
-        { type: "Students (UG/PG)", price: "₹4,000" },
-        { type: "Industry Professionals", price: "₹8,000" },
-      ],
+      category: "UP, PG Students & Ph. D. ( Research Scholars )",
+      indianFee: "₹ 3500",
     },
     {
-      category: "Regular Registration",
-      deadline: "April 30, 2026",
-      rates: [
-        { type: "Academicians/Research Scholars", price: "₹7,500" },
-        { type: "Students (UG/PG)", price: "₹5,000" },
-        { type: "Industry Professionals", price: "₹10,000" },
-      ],
+      category: "Academicians",
+      indianFee: "₹ 4000",
     },
     {
-      category: "Late/Spot Registration",
-      deadline: "After April 30, 2026",
-      rates: [
-        { type: "Academicians/Research Scholars", price: "₹9,000" },
-        { type: "Students (UG/PG)", price: "₹6,000" },
-        { type: "Industry Professionals", price: "₹12,000" },
-      ],
-    },
-  ];
-
-  const internationalRates = [
-    {
-      category: "Early Bird Registration",
-      deadline: "March 31, 2026",
-      rates: [
-        { type: "Academicians/Research Scholars", price: "$200" },
-        { type: "Students (UG/PG)", price: "$150" },
-        { type: "Industry Professionals", price: "$250" },
-      ],
-    },
-    {
-      category: "Regular Registration",
-      deadline: "April 30, 2026",
-      rates: [
-        { type: "Academicians/Research Scholars", price: "$250" },
-        { type: "Students (UG/PG)", price: "$180" },
-        { type: "Industry Professionals", price: "$300" },
-      ],
-    },
-    {
-      category: "Late/Spot Registration",
-      deadline: "After April 30, 2026",
-      rates: [
-        { type: "Academicians/Research Scholars", price: "$300" },
-        { type: "Students (UG/PG)", price: "$220" },
-        { type: "Industry Professionals", price: "$350" },
-      ],
+      category: "Industrial Representatives",
+      indianFee: "₹ 5000",
     },
   ];
 
@@ -119,87 +69,66 @@ export default function Registration() {
           </p>
         </div>
 
-        {/* Tabs for Domestic/International */}
-        <div className="flex justify-center mb-8">
-          <div className="inline-flex rounded-lg border border-gray-200 bg-white p-1 shadow-sm">
-            <button
-              onClick={() => setActiveTab("domestic")}
-              className={`px-6 py-3 rounded-md font-semibold transition-all duration-300 ${
-                activeTab === "domestic"
-                  ? "bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-md"
-                  : "text-gray-600 hover:text-blue-600"
-              }`}
-            >
-              Domestic Participants
-            </button>
-            <button
-              onClick={() => setActiveTab("international")}
-              className={`px-6 py-3 rounded-md font-semibold transition-all duration-300 ${
-                activeTab === "international"
-                  ? "bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-md"
-                  : "text-gray-600 hover:text-blue-600"
-              }`}
-            >
-              International Participants
-            </button>
-          </div>
-        </div>
-
-        {/* Registration Tables */}
+        {/* Registration Fees (aligned with source site) */}
         <div className="max-w-6xl mx-auto mb-12">
-          {(activeTab === "domestic" ? domesticRates : internationalRates).map(
-            (category, idx) => (
-              <div key={idx} className="mb-8">
-                <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 rounded-t-lg">
-                  <div className="flex items-center justify-between flex-wrap gap-2">
-                    <h3 className="text-xl font-bold flex items-center">
-                      <Calendar className="w-5 h-5 mr-2" />
-                      {category.category}
-                    </h3>
-                    <span className="text-sm bg-white/20 px-3 py-1 rounded-full">
-                      Deadline: {category.deadline}
-                    </span>
-                  </div>
-                </div>
-                <div className="bg-white shadow-lg rounded-b-lg overflow-hidden border border-gray-200">
-                  <div className="overflow-x-auto">
-                    <table className="w-full">
-                      <thead className="bg-gray-50">
-                        <tr>
-                          <th className="px-6 py-4 text-left text-sm font-semibold text-gray-700 border-b">
-                            Participant Type
-                          </th>
-                          <th className="px-6 py-4 text-right text-sm font-semibold text-gray-700 border-b">
-                            Registration Fee
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {category.rates.map((rate, index) => (
-                          <tr
-                            key={index}
-                            className="hover:bg-blue-50 transition-colors"
-                          >
-                            <td className="px-6 py-4 text-gray-800 border-b">
-                              <div className="flex items-center">
-                                <Users className="w-4 h-4 text-blue-600 mr-2" />
-                                {rate.type}
-                              </div>
-                            </td>
-                            <td className="px-6 py-4 text-right border-b">
-                              <span className="text-lg font-bold text-blue-600">
-                                {rate.price}
-                              </span>
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            ),
-          )}
+          <div className="bg-white shadow-xl rounded-2xl overflow-hidden border border-blue-100">
+            <div className="px-4 py-3 sm:px-6 bg-gradient-to-r from-blue-700 to-blue-600">
+              <p className="text-white text-sm sm:text-base font-semibold tracking-wide">
+                Registration Fees
+              </p>
+            </div>
+            <div className="overflow-x-auto bg-white">
+              <table className="w-full min-w-[640px]">
+                <thead className="bg-blue-50">
+                  <tr>
+                    <th className="px-3 py-3 text-left text-sm sm:px-6 sm:py-4 sm:text-base font-extrabold text-blue-900 border-b border-blue-100">
+                      Category
+                    </th>
+                    <th className="px-3 py-3 text-center text-sm sm:px-6 sm:py-4 sm:text-base font-extrabold text-blue-900 border-b border-blue-100">
+                      Indian Delegates (₹)
+                    </th>
+                    <th className="px-3 py-3 text-center text-sm sm:px-6 sm:py-4 sm:text-base font-extrabold text-blue-900 border-b border-blue-100">
+                      Foreign Delegates ($)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {registrationFees.map((fee, index) => (
+                    <tr
+                      key={fee.category}
+                      className="odd:bg-white even:bg-blue-50/40"
+                    >
+                      <td className="px-3 py-3 text-sm sm:px-6 sm:py-4 sm:text-base text-gray-800 border-b border-blue-50">
+                        {fee.category}
+                      </td>
+                      <td className="px-3 py-3 text-center border-b border-blue-50 sm:px-6 sm:py-4">
+                        <span className="text-lg sm:text-2xl font-extrabold text-blue-700">
+                          {fee.indianFee}
+                        </span>
+                      </td>
+                      {index === 0 && (
+                        <td
+                          rowSpan={registrationFees.length}
+                          className="px-3 py-3 text-center align-middle border-b border-blue-50 sm:px-6 sm:py-4 bg-blue-50/50"
+                        >
+                          <span className="text-lg sm:text-2xl font-extrabold text-blue-700">
+                            $ 150
+                          </span>
+                        </td>
+                      )}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="bg-orange-50 border-t border-orange-100 px-4 py-4 sm:px-6">
+              <p className="text-sm sm:text-base text-orange-900 leading-relaxed">
+                <span className="font-semibold">Note:</span> Payment is to be
+                made after acceptance of the full length paper. There is no
+                separate fee for publication. Registration Fee Includes GST.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Two Column Layout for Additional Info */}
