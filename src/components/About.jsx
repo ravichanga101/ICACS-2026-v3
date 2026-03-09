@@ -4,7 +4,7 @@ export default function About() {
   const institutes = [
     {
       name: "CSPIT",
-      fullName: "Chandubhai S Patel Institute of Technology",
+      fullName: "Chandubhai S. Patel Institute of Technology",
       logo: "/assets/img/cspit_logo.png",
       description:
         "Chandubhai S Patel Institute of Technology (CSPIT) is the first institute established in 2000 at CHARUSAT campus, offering UG and PG programs in engineering and technology.",

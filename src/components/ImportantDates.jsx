@@ -67,7 +67,7 @@ export default function ImportantDates() {
     },
     {
       event: "Conference Date",
-      date: "19 September 2026",
+      date: "September 19, 2026",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"

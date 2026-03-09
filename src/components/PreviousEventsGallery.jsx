@@ -340,9 +340,9 @@ export default function PreviousEventsGallery() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-2">
-            Previous{" "}
+            ICACS{" "}
             <span className="text-[#fd7e14] bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-              Conference
+              2025
             </span>
           </h2>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 border-b-4 border-blue-600 inline-block pb-3 mb-6">
