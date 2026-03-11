@@ -13,11 +13,11 @@ export default function Registration() {
   const registrationFees = [
     {
       category: "Students / Academicians ",
-      indianFee: "₹ 9000",
+      indianFee: "₹ 9,000",
     },
     {
       category: "Industrial Representatives",
-      indianFee: "₹ 12000",
+      indianFee: "₹ 12,000",
     },
   ];
 
