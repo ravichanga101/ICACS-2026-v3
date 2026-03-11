@@ -7,99 +7,119 @@ export default function OrganizingCommittee() {
     {
       name: "Shri Surendra M. Patel",
       affiliation: "President, Kelavani Mandal and CHARUSAT, Gujarat, India",
-      image: "/assets/img/orgcmt/SurendraMPatel.png"
+      image: "/assets/img/orgcmt/SurendraMPatel.png",
+    },
+    {
+      name: "Shri Kiranbhai Patel",
+      affiliation: "President, Matrusanstha",
+      image: "/assets/img/orgcmt/#",
+    },
+    {
+      name: "Shri Vipulbhai Patel",
+      affiliation: "President, CHRF",
+      image: "/assets/img/orgcmt/vipulbhai3.png",
     },
     {
       name: "Dr. M. C. Patel",
-      affiliation: "Hon. Secretary, Kelavani Mandal, Matrusanstha & CHRF, Gujarat, India",
-      image: "/assets/img/orgcmt/MCPatel.png"
-    }
+      affiliation:
+        "Hon. Secretary, Kelavani Mandal, Matrusanstha & CHRF, Gujarat, India",
+      image: "/assets/img/orgcmt/MCPatel.png",
+    },
   ];
 
   const patrons = [
     {
       name: "Dr. Atul M. Patel",
       affiliation: "Provost, CHARUSAT, Gujarat, India",
-      image: "/assets/img/orgcmt/AtulMPatel.png"
+      image: "/assets/img/orgcmt/AtulMPatel.png",
     },
     {
       name: "Dr. Binit Patel",
       affiliation: "Registrar, CHARUSAT, Gujarat, India",
-      image: "/assets/img/orgcmt/BinitPatel.png"
-    }
+      image: "/assets/img/orgcmt/BinitPatel.png",
+    },
   ];
 
   const conveners = [
     {
       name: "Dr. Vijay Chaudhary",
       affiliation: "Dean, FTE, CHARUSAT, Gujarat, India",
-      image: "/assets/img/orgcmt/VijayChaudhary.png"
+      image: "/assets/img/orgcmt/VijayChaudhary.png",
     },
     {
       name: "Dr. Trushit Upadhyaya",
       affiliation: "Principal, CSPIT, CHARUSAT, Gujarat, India",
-      image: "/assets/img/orgcmt/TrushitUpadhyaya.png"
+      image: "/assets/img/orgcmt/TrushitUpadhyaya.png",
     },
     {
       name: "Dr. Bankim Patel",
       affiliation: "Principal, DEPSTAR, CHARUSAT, Gujarat, India",
-      image: "/assets/img/orgcmt/BankimPatel.png"
-    }
+      image: "/assets/img/orgcmt/BankimPatel.png",
+    },
   ];
 
   const coConveners = [
     {
       name: "Dr. V. R. Panchal",
-      affiliation: "Head, Civil Engineering Department, CSPIT, CHARUSAT, Gujarat, India",
-      image: "/assets/img/orgcmt/VijayPanchal.png"
+      affiliation:
+        "Head, Civil Engineering Department, CSPIT, CHARUSAT, Gujarat, India",
+      image: "/assets/img/orgcmt/VijayPanchal.png",
     },
     {
       name: "Dr. Amit Thakkar",
-      affiliation: "Head, Department of Computer Science & Engineering, CSPIT, CHARUSAT",
-      image: "/assets/img/icacs-coordinators-imgs/AmitThakkar.png"
+      affiliation:
+        "Head, Department of Computer Science & Engineering, CSPIT, CHARUSAT",
+      image: "/assets/img/icacs-coordinators-imgs/AmitThakkar.png",
     },
     {
       name: "Dr. Nilay Patel",
-      affiliation: "Head, Department of Electrical Engineering, CSPIT, CHARUSAT",
-      image: "/assets/img/icacs-coordinators-imgs/NilayPatel.png"
+      affiliation:
+        "Head, Department of Electrical Engineering, CSPIT, CHARUSAT",
+      image: "/assets/img/icacs-coordinators-imgs/NilayPatel.png",
     },
     {
       name: "Dr. Upesh Patel",
-      affiliation: "Head, Department of Electronics & Communication Engineering, CSPIT, CHARUSAT, India",
-      image: "/assets/img/icacs-coordinators-imgs/UpeshPatel.png"
+      affiliation:
+        "Head, Department of Electronics & Communication Engineering, CSPIT, CHARUSAT, India",
+      image: "/assets/img/icacs-coordinators-imgs/UpeshPatel.png",
     },
     {
       name: "Dr. Nirav Bhatt",
-      affiliation: "Head, Department of AI & ML Engineering, CSPIT, CHARUSAT, India",
-      image: "/assets/img/icacs-coordinators-imgs/NiravBhatt.png"
+      affiliation:
+        "Head, Department of AI & ML Engineering, CSPIT, CHARUSAT, India",
+      image: "/assets/img/icacs-coordinators-imgs/NiravBhatt.png",
     },
     {
       name: "Dr. Nikita Bhatt",
-      affiliation: "Head, Department of Computer Engineering, CSPIT, CHARUSAT, India",
-      image: "/assets/img/icacs-coordinators-imgs/NikitaBhatt.png"
+      affiliation:
+        "Head, Department of Computer Engineering, CSPIT, CHARUSAT, India",
+      image: "/assets/img/icacs-coordinators-imgs/NikitaBhatt.png",
     },
     {
       name: "Dr. Purvi Prajapati",
-      affiliation: "Head, Department of Information Technology, CSPIT, CHARUSAT",
-      image: "/assets/img/icacs-coordinators-imgs/PurviPrajapati.png"
+      affiliation:
+        "Head, Department of Information Technology, CSPIT, CHARUSAT",
+      image: "/assets/img/icacs-coordinators-imgs/PurviPrajapati.png",
     },
     {
       name: "Dr. Amit Nayak",
-      affiliation: "Head, Computer Science and Engineering Department, DEPSTAR, CHARUSAT, India",
-      image: "/assets/img/icacs-coordinators-imgs/AmitNayak.png"
+      affiliation:
+        "Head, Computer Science and Engineering Department, DEPSTAR, CHARUSAT, India",
+      image: "/assets/img/icacs-coordinators-imgs/AmitNayak.png",
     },
     {
       name: "Dr. Dweepna Garg",
-      affiliation: "Head, Department of Information Technology, DEPSTAR, CHARUSAT, Gujarat, India",
-      image: "/assets/img/icacs-coordinators-imgs/DweepnaGarg.png"
+      affiliation:
+        "Head, Department of Information Technology, DEPSTAR, CHARUSAT, Gujarat, India",
+      image: "/assets/img/icacs-coordinators-imgs/DweepnaGarg.png",
     },
     {
       name: "Dr. Chirag Patel",
-      affiliation: "Head, Computer Engineering Department, DEPSTAR, CHARUSAT, Gujarat, India",
-      image: "/assets/img/icacs-coordinators-imgs/ChiragPatel.png"
-    }
+      affiliation:
+        "Head, Computer Engineering Department, DEPSTAR, CHARUSAT, Gujarat, India",
+      image: "/assets/img/icacs-coordinators-imgs/ChiragPatel.png",
+    },
   ];
-
 
   const renderMemberCard = (member, index) => (
     <div
@@ -121,9 +141,7 @@ export default function OrganizingCommittee() {
           <h4 className="text-lg font-semibold text-gray-800 mb-2">
             {member.name}
           </h4>
-          <p className="text-gray-600 text-sm">
-            {member.affiliation}
-          </p>
+          <p className="text-gray-600 text-sm">{member.affiliation}</p>
         </div>
       </div>
     </div>
@@ -145,7 +163,9 @@ export default function OrganizingCommittee() {
               Chief Patrons
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
-              {chiefPatrons.map((member, index) => renderMemberCard(member, index))}
+              {chiefPatrons.map((member, index) =>
+                renderMemberCard(member, index),
+              )}
             </div>
           </div>
 
@@ -165,7 +185,9 @@ export default function OrganizingCommittee() {
               Conveners
             </h3>
             <div className="grid md:grid-cols-3 gap-4">
-              {conveners.map((member, index) => renderMemberCard(member, index))}
+              {conveners.map((member, index) =>
+                renderMemberCard(member, index),
+              )}
             </div>
           </div>
 
@@ -175,7 +197,9 @@ export default function OrganizingCommittee() {
               Co-Conveners
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
-              {coConveners.map((member, index) => renderMemberCard(member, index))}
+              {coConveners.map((member, index) =>
+                renderMemberCard(member, index),
+              )}
             </div>
           </div>
         </div>

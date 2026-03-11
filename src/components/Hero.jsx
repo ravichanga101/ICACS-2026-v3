@@ -42,7 +42,8 @@ export default function Hero() {
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1869b4] leading-tight transition-all duration-300">
               <span className="block mb-2 animate-slideUp">ICACS 2026</span>
               <span className="block text-xl md:text-2xl lg:text-3xl text-gray-800 animate-slideUp animation-delay-100">
-                International Conference on
+                2<sup className="text-xs md:text-sm">nd</sup> International
+                Conference on
               </span>
               <span className="block mt-2 text-[#fd7e14] animate-slideUp animation-delay-200">
                 Artificial Intelligence, Communication Technologies & Smart

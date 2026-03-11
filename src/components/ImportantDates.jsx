@@ -67,7 +67,7 @@ export default function ImportantDates() {
     },
     {
       event: "Conference Date",
-      date: "September 19, 2026",
+      date: "September 18, 2026",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -96,8 +96,9 @@ export default function ImportantDates() {
             Important <span className="text-[#fd7e14]">Dates</span>
           </h2>
           <p className="text-gray-600 mt-3 text-lg">
-            International Conference on Artificial Intelligence, Communication
-            Technologies & Smart Cities (ICACS 2026)
+            2<sup className="text-xs md:text-sm">nd</sup> International
+            Conference on Artificial Intelligence, Communication Technologies &
+            Smart Cities (ICACS 2026)
           </p>
         </div>
 

@@ -12,16 +12,12 @@ import {
 export default function Registration() {
   const registrationFees = [
     {
-      category: "UP, PG Students & Ph. D. ( Research Scholars )",
-      indianFee: "₹ 3500",
-    },
-    {
-      category: "Academicians",
-      indianFee: "₹ 4000",
+      category: "Students / Academicians ",
+      indianFee: "₹ 9000",
     },
     {
       category: "Industrial Representatives",
-      indianFee: "₹ 5000",
+      indianFee: "₹ 12000",
     },
   ];
 

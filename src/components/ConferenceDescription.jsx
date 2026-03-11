@@ -9,8 +9,9 @@ export default function ConferenceDescription() {
             About <span className="text-[#fd7e14]">ICACS 2026</span>
           </h2>
           <p className="text-gray-600 mt-3 text-lg">
-            International Conference on Artificial Intelligence, Communication
-            Technologies & Smart Cities
+            2<sup className="text-xs md:text-sm">nd</sup> International
+            Conference on Artificial Intelligence, Communication Technologies &
+            Smart Cities
           </p>
         </div>
 
@@ -19,16 +20,18 @@ export default function ConferenceDescription() {
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 mb-6 shadow-md border-l-4 border-blue-600">
             <div className="space-y-3">
               <p className="text-gray-700 leading-relaxed text-justify">
-                The International Conference on Artificial Intelligence,
-                Communication Technologies & Smart Cities (ICACS 2026) is a
-                multidisciplinary platform which brings together academicians,
-                industry leaders, researchers, technocrats, and experts
-                belonging to various disciplines of Engineering. The conference
-                provides an opportunity for exploring and discussing the
-                advances and innovations in the field of Engineering. Young
-                engineers are encouraged to present their ideas and interact
-                with national and international peers.
+                The 2<sup className="text-xs md:text-sm">nd</sup> International
+                Conference on Artificial Intelligence, Communication
+                Technologies & Smart Cities (ICACS 2026) is a multidisciplinary
+                platform which brings together academicians, industry leaders,
+                researchers, technocrats, and experts belonging to various
+                disciplines of Engineering. The conference provides an
+                opportunity for exploring and discussing the advances and
+                innovations in the field of Engineering. Young engineers are
+                encouraged to present their ideas and interact with national and
+                international peers.
               </p>
+              <br />
               <p className="text-gray-700 leading-relaxed text-justify">
                 The ICACS 2026 will help in fostering connections on a global
                 scale between the participants drawn from various countries
@@ -38,7 +41,7 @@ export default function ConferenceDescription() {
           </div>
 
           {/* Important Note */}
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-lg shadow-md">
+          {/* <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-lg shadow-md">
             <div className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +62,7 @@ export default function ConferenceDescription() {
                 presentations and deliberations will be in English.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
