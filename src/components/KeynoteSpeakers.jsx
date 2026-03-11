@@ -4,23 +4,31 @@ import React from "react";
 import Link from "next/link";
 
 const keynotes = [
+  // {
+  //   session: 1,
+  //   title:
+  //     "Design and Automation in Material Selection for Oil and Gas Refineries",
+  //   name: "Mr. Urvesh Vala",
+  //   affiliation:
+  //     "Head of Material Engineering Technology, L&T Energy Hydrocarbon Engineering Ltd., Vadodara",
+  //   image: "/assets/img/keynote/UrveshVala.png",
+  // },
   {
     session: 1,
     title:
-      "Design and Automation in Material Selection for Oil and Gas Refineries",
-    name: "Mr. Urvesh Vala",
-    affiliation:
-      "Head of Material Engineering Technology, L&T Energy Hydrocarbon Engineering Ltd., Vadodara",
-    image: "/assets/img/keynote/UrveshVala.png",
+      "Development of adaptive signal processing and machine learning algorithms for audio signal processing",
+    name: "Prof. Nitin V. George",
+    affiliation: "Professor, Indian Institute of Technology Gandhinagar",
+    image: "/assets/img/keynote/NitinVGeorge.png",
   },
   {
     session: 2,
     title:
-      "Development of adaptive signal processing and machine learning algorithms for audio signal processing",
-    name: "Prof. Nitin V. George",
+      "AI in Intelligent transportation systems for making our cities smart",
+    name: "Dr. Mohammad Shafi Mir",
     affiliation:
-      "Professor, Indian Institute of Technology Gandhinagar",
-    image: "/assets/img/keynote/NitinVGeorge.png",
+      "Professor, Department of Civil Engineering, National Institute of Technology, Srinagar",
+    image: "/assets/img/keynote/MohammadShafiMir.png",
   },
   {
     session: 3,
@@ -31,33 +39,24 @@ const keynotes = [
       "Manager and Senior Research Scientist, IBM Research, Bangalore",
     image: "/assets/img/keynote/AtulKumar.png",
   },
-  {
-    session: 4,
-    title:
-      "Mobility in Smart Cities: Electrification, Automation and Integration",
-    name: "Dr. Subba Reddy",
-    affiliation:
-      "Chief Research Scientist, Indian Institute of Science, Bangalore",
-    image: "/assets/img/keynote/SubbaReddy.png",
-  },
-  {
-    session: 5,
-    title:
-      "Intelligent transportation systems for sustainable smart cities",
-    name: "Dr. Tom V. Mathew",
-    affiliation:
-      "Professor, Department of Civil Engineering, Indian Institute of Technology Bombay",
-    image: "/assets/img/keynote/TomVMathew.png",
-  },
-  {
-    session: 6,
-    title:
-      "AI in Intelligent transportation systems for making our cities smart",
-    name: "Dr. Mohammad Shafi Mir",
-    affiliation:
-      "Professor, Department of Civil Engineering, National Institute of Technology, Srinagar",
-    image: "/assets/img/keynote/MohammadShafiMir.png",
-  },
+  // {
+  //   session: 4,
+  //   title:
+  //     "Mobility in Smart Cities: Electrification, Automation and Integration",
+  //   name: "Dr. Subba Reddy",
+  //   affiliation:
+  //     "Chief Research Scientist, Indian Institute of Science, Bangalore",
+  //   image: "/assets/img/keynote/SubbaReddy.png",
+  // },
+  // {
+  //   session: 5,
+  //   title:
+  //     "Intelligent transportation systems for sustainable smart cities",
+  //   name: "Dr. Tom V. Mathew",
+  //   affiliation:
+  //     "Professor, Department of Civil Engineering, Indian Institute of Technology Bombay",
+  //   image: "/assets/img/keynote/TomVMathew.png",
+  // },
 ];
 
 export default function KeynoteSpeakers() {
@@ -102,7 +101,9 @@ export default function KeynoteSpeakers() {
                   <div className="text-center">
                     <p className="text-sm font-semibold text-blue-700 mb-2">
                       Session {k.session} Keynote Speech
-                      <span className="block font-normal text-gray-700">{k.title}</span>
+                      <span className="block font-normal text-gray-700">
+                        {k.title}
+                      </span>
                     </p>
                     <h4 className="text-lg font-semibold text-gray-800 mb-2">
                       {k.name}
