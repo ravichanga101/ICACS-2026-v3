@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function ConferenceDescription() {
@@ -37,6 +38,23 @@ export default function ConferenceDescription() {
                 scale between the participants drawn from various countries
                 leading to networking between them.
               </p>
+
+              <div className="pt-4 flex flex-col sm:flex-row gap-3">
+                <a
+                  href="https://icacs.charusat.ac.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+                >
+                  Visit ICACS 2025 Website
+                </a>
+                <Link
+                  href="/previous-proceedings"
+                  className="inline-flex items-center justify-center rounded-md border border-blue-600 px-5 py-3 text-sm font-semibold text-blue-700 transition hover:bg-blue-50"
+                >
+                  View ICACS 2025 Proceedings
+                </Link>
+              </div>
             </div>
           </div>
 
