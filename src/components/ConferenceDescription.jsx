@@ -39,6 +39,15 @@ export default function ConferenceDescription() {
                 leading to networking between them.
               </p>
 
+              <div className="flex justify-center">
+                <img
+                  src="/assets/img/publication_LLNS.jpg"
+                  alt="ICACS previous publication"
+                  className="w-30 sm:w-32 rounded-lg border border-blue-100 shadow-md transition hover:shadow-lg"
+                  loading="lazy"
+                />
+              </div>
+
               <div className="pt-4 flex flex-col sm:flex-row gap-3">
                 <a
                   href="https://icacs.charusat.ac.in/"
