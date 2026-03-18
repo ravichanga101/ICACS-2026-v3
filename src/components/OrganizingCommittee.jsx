@@ -12,7 +12,7 @@ export default function OrganizingCommittee() {
     {
       name: "Shri Kiranbhai Patel",
       affiliation: "President, Matrusanstha",
-      image: "/assets/img/orgcmt/#",
+      image: "/assets/img/kiranpatel.png",
     },
     {
       name: "Shri Vipulbhai Patel",
