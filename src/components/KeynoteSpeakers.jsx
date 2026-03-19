@@ -65,8 +65,7 @@ export default function KeynoteSpeakers() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-800 border-b-4 border-blue-600 inline-block pb-2">
-            Galaxy of National and International{" "}
-            <span className="text-[#fd7e14]">Keynote Speakers</span>
+            Galaxy of <span className="text-[#fd7e14]">Keynote Speakers</span>
           </h2>
         </div>
 
