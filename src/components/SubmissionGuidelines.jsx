@@ -1,5 +1,7 @@
 import React from "react";
 
+const submissionPortalUrl = "https://cmt3.research.microsoft.com/SICACS2026";
+
 const SubmissionGuidelines = () => {
   const guidelines = [
     {
@@ -90,9 +92,9 @@ const SubmissionGuidelines = () => {
         <div className="max-w-7xl mx-auto">
           {/* Guidelines Cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-10">
-            {guidelines.map((guideline, index) => (
+            {guidelines.map((guideline) => (
               <div
-                key={index}
+                key={guideline.title}
                 className="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-blue-600"
               >
                 <div className="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full mb-4 mx-auto">
@@ -133,7 +135,7 @@ const SubmissionGuidelines = () => {
             </div>
             <ul className="space-y-3">
               {submissionProcess.map((step, index) => (
-                <li key={index} className="flex items-start">
+                <li key={step} className="flex items-start">
                   <span className="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-semibold mr-3 mt-0.5">
                     {index + 1}
                   </span>
@@ -167,8 +169,8 @@ const SubmissionGuidelines = () => {
               </h3>
             </div>
             <ul className="space-y-3">
-              {importantNotes.map((note, index) => (
-                <li key={index} className="flex items-start">
+              {importantNotes.map((note) => (
+                <li key={note} className="flex items-start">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-orange-500 mr-3 mt-0.5 flex-shrink-0"
@@ -194,8 +196,9 @@ const SubmissionGuidelines = () => {
           {/* CMT Portal Button */}
           <div className="text-center">
             <a
-              href="https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html"
+              href={submissionPortalUrl}
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <svg
