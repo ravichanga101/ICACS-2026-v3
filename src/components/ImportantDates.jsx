@@ -3,8 +3,9 @@ import React from "react";
 export default function ImportantDates() {
   const importantDates = [
     {
-      event: "Paper Submission Deadline",
+      event: "Paper Submission Deadline (Extended)",
       date: "July 20, 2026",
+      previousDate: "July 10, 2026",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -135,9 +136,21 @@ export default function ImportantDates() {
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <p className="text-2xl font-bold text-gray-800">
-                      {item.date}
-                    </p>
+                    <div className="text-center">
+                      {item.previousDate && (
+                        <p className="text-sm text-gray-500 line-through">
+                          {item.previousDate}
+                        </p>
+                      )}
+                      <p className="text-2xl font-bold text-gray-800">
+                        {item.date}
+                      </p>
+                      {item.previousDate && (
+                        <p className="text-xs font-semibold uppercase tracking-wide text-green-700">
+                          Extended Deadline
+                        </p>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
