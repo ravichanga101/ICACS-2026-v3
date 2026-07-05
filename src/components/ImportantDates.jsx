@@ -4,7 +4,7 @@ export default function ImportantDates() {
   const importantDates = [
     {
       event: "Paper Submission Deadline",
-      date: "July 10, 2026",
+      date: "July 20, 2026",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
