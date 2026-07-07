@@ -30,7 +30,7 @@ export default function AdvisoryCommittee() {
       country: "Bulgaria",
     },
     {
-      name: "Prof. Dr.Noha Mostafa",
+      name: "Prof. Dr. Noha Mostafa",
       affiliation:
         "Associate Professor, The British University in Egypt, Egypt",
       country: "Bulgaria",
