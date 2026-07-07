@@ -6,19 +6,21 @@ export default function Editors() {
   const editors = [
     {
       name: "Dr. Haipeng Liu",
-      affiliation: "Coventry University, Coventry, United Kingdom",
-      image: "/assets/img/editors/HaipengLiu.png"
+      affiliation: "Universidad Santa Paula, Costa Rica",
+      image: "/assets/img/editors/HaipengLiu.png",
     },
     {
       name: "Dr. Trushit Upadhyaya",
-      affiliation: "Charotar University of Science and Technology (CHARUSAT), Changa, Gujarat, India",
-      image: "/assets/img/orgcmt/TrushitUpadhyaya.png"
+      affiliation:
+        "Charotar University of Science and Technology (CHARUSAT), Changa, Gujarat, India",
+      image: "/assets/img/orgcmt/TrushitUpadhyaya.png",
     },
     {
       name: "Dr. Prince Jain",
-      affiliation: "Parul Institute of Technology, Parul University, Vadodara, Gujarat, India",
-      image: "/assets/img/editors/PrinceJain.png"
-    }
+      affiliation:
+        "Parul Institute of Technology, Parul University, Vadodara, Gujarat, India",
+      image: "/assets/img/editors/PrinceJain.png",
+    },
   ];
 
   return (

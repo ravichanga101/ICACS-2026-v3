@@ -5,50 +5,58 @@ export default function AdvisoryCommittee() {
     {
       name: "Dr. Arokiaswami Alphones",
       affiliation: "Nanyang Technological University (NTU)",
-      country: "Singapore"
+      country: "Singapore",
     },
     {
       name: "Dr. Vladan Devedzic",
       affiliation: "University of Belgrade",
-      country: "Serbia"
+      country: "Serbia",
     },
     {
       name: "Dr. Satyam Panchal",
       affiliation: "University of Waterloo",
-      country: "Canada"
+      country: "Canada",
     },
     {
       name: "Prof. Dr. Boris Tzankov",
-      affiliation: "University of Architecture, Civil Engineering and Geodesy (UACEG)",
-      country: "Bulgaria"
+      affiliation:
+        "University of Architecture, Civil Engineering and Geodesy (UACEG)",
+      country: "Bulgaria",
     },
     {
       name: "Prof. Dr. Eng. Julieta Mancheva",
-      affiliation: "University of Architecture, Civil Engineering and Geodesy (UACEG)",
-      country: "Bulgaria"
-    }
+      affiliation:
+        "University of Architecture, Civil Engineering and Geodesy (UACEG)",
+      country: "Bulgaria",
+    },
+    {
+      name: "Prof. Dr.Noha Mostafa",
+      affiliation:
+        "Associate Professor, The British University in Egypt, Egypt",
+      country: "Bulgaria",
+    },
   ];
 
   const nationalAdvisory = [
     {
       name: "Dr. Brijesh Kumbhani",
       affiliation: "IIT Ropar",
-      country: "India"
+      country: "India",
     },
     {
       name: "Dr. Pinalkumar Engineer",
       affiliation: "SVNIT",
-      country: "India"
+      country: "India",
     },
     {
       name: "Dr. Ajay M. Sidpara",
       affiliation: "IIT Kharagpur",
-      country: "India"
+      country: "India",
     },
     {
       name: "Dr. Dilip Sharma",
       affiliation: "MNIT",
-      country: "India"
+      country: "India",
     },
     // {
     //   name: "Dr. Amit Ganatra",
@@ -58,45 +66,46 @@ export default function AdvisoryCommittee() {
     {
       name: "Dr. Ankit Thakkar",
       affiliation: "Nirma University",
-      country: "India"
+      country: "India",
     },
     {
       name: "Dr. Sudeep Tanwar",
       affiliation: "Nirma University",
-      country: "India"
+      country: "India",
     },
     {
       name: "Dr. Narinder Sharma",
       affiliation: "Amritsar Group of Colleges",
-      country: "India"
+      country: "India",
     },
     {
       name: "Dr. Sanjay Garg",
       affiliation: "Jaypee University of Engineering and Technology",
-      country: "India"
+      country: "India",
     },
     {
       name: "Dr. Ketan Kotecha",
       affiliation: "Symbiosis International University",
-      country: "India"
+      country: "India",
     },
     {
       name: "Dr. Vandana Sharma",
       affiliation: "CHRIST University",
-      country: "India"
+      country: "India",
     },
     {
       name: "Dr. Ganesh D Kale",
       affiliation: "SVNIT",
-      country: "India"
-    }
+      country: "India",
+    },
   ];
 
   const industrialAdvisory = [
     {
       name: "Mr. Gaurang Joshipura",
-      affiliation: "Managing Director, Zeppelin System India Pvt. Ltd., Vadodara",
-      country: "Gujarat"
+      affiliation:
+        "Managing Director, Zeppelin System India Pvt. Ltd., Vadodara",
+      country: "Gujarat",
     },
     // {
     //   name: "Dr. Venkat Ramani",
@@ -105,39 +114,44 @@ export default function AdvisoryCommittee() {
     // },
     {
       name: "Mr. Ajit Radhakrishnan",
-      affiliation: "Regional Head – Technical Services, UltraTech Cement Ltd, Vadodara",
-      country: "Gujarat"
+      affiliation:
+        "Regional Head – Technical Services, UltraTech Cement Ltd, Vadodara",
+      country: "Gujarat",
     },
     {
       name: "Mr. Dhaval Soni",
-      affiliation: "Project Manager, AFCONS Infrastructure Limited - A Shapoorji Pallonji Group Company, Mumbai",
-      country: "Maharashtra"
+      affiliation:
+        "Project Manager, AFCONS Infrastructure Limited - A Shapoorji Pallonji Group Company, Mumbai",
+      country: "Maharashtra",
     },
     {
       name: "Mr. Sanjay Mahagaokar",
-      affiliation: "Director, R&D and Engineering, Rotomotive Powerdrives India Ltd. Anand",
-      country: "Gujarat"
+      affiliation:
+        "Director, R&D and Engineering, Rotomotive Powerdrives India Ltd. Anand",
+      country: "Gujarat",
     },
     {
       name: "Dr. Vijay Shah",
       affiliation: "Senior Principal Engineer, ABB India Ltd. Ahmedabad",
-      country: "Gujarat"
+      country: "Gujarat",
     },
     {
       name: "Dr. Jayesh P. Pabari",
-      affiliation: "Researcher and Scientist, Physical Research Laboratory, Ahmedabad",
-      country: "Gujarat"
+      affiliation:
+        "Researcher and Scientist, Physical Research Laboratory, Ahmedabad",
+      country: "Gujarat",
     },
     {
       name: "Dr. Abha Chhabra",
-      affiliation: "Senior Scientist, Space Applications Centre (SAC), Indian Space Research Organisation (ISRO), Ahmedabad",
-      country: "Gujarat"
+      affiliation:
+        "Senior Scientist, Space Applications Centre (SAC), Indian Space Research Organisation (ISRO), Ahmedabad",
+      country: "Gujarat",
     },
     {
       name: "Mr. Dvijesh Bhatt",
       affiliation: "Senior NLP Engineer, Turabit LLC, Ahmedabad",
-      country: "Gujarat"
-    }
+      country: "Gujarat",
+    },
   ];
 
   const renderCommitteeSection = (title, members, bgColor = "bg-white") => (
@@ -155,9 +169,7 @@ export default function AdvisoryCommittee() {
               <h4 className="font-semibold text-gray-800 mb-1">
                 {member.name}
               </h4>
-              <p className="text-sm text-gray-600 mb-1">
-                {member.affiliation}
-              </p>
+              <p className="text-sm text-gray-600 mb-1">{member.affiliation}</p>
               <p className="text-xs text-blue-600 font-medium">
                 {member.country}
               </p>
@@ -178,9 +190,18 @@ export default function AdvisoryCommittee() {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          {renderCommitteeSection("International Advisory Committee", internationalAdvisory)}
-          {renderCommitteeSection("National Advisory Committee", nationalAdvisory)}
-          {renderCommitteeSection("Industrial Advisory Committee", industrialAdvisory)}
+          {renderCommitteeSection(
+            "International Advisory Committee",
+            internationalAdvisory,
+          )}
+          {renderCommitteeSection(
+            "National Advisory Committee",
+            nationalAdvisory,
+          )}
+          {renderCommitteeSection(
+            "Industrial Advisory Committee",
+            industrialAdvisory,
+          )}
         </div>
       </div>
     </section>

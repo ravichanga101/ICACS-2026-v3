@@ -3,7 +3,7 @@ import React from "react";
 export default function ImportantDates() {
   const importantDates = [
     {
-      event: "Paper Submission Deadline (Extended)",
+      event: "Paper Submission Deadline",
       date: "July 20, 2026",
       previousDate: "July 10, 2026",
       icon: (
