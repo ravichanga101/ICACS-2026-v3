@@ -35,7 +35,7 @@ export default function Registration() {
     "At least one author must register for each accepted paper",
     "Student registration requires valid student ID proof",
     "Registration fee includes GST (for domestic participants)",
-    "Additional pages will be charged separately",
+    "There will be no extra charges for page numbers beyond 10. (maximum page limit for research paper is 25 pages)",
     "Certificate of participation will be provided to all registered participants",
   ];
 
