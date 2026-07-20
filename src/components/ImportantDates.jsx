@@ -46,7 +46,7 @@ export default function ImportantDates() {
       gradient: "from-green-500 to-green-600",
     },
     {
-      event: "Submission of Camera Ready Paper",
+      event: "Submission of Full Length Paper",
       date: "August 25, 2026",
       icon: (
         <svg
