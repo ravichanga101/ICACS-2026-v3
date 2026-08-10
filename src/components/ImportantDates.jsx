@@ -26,7 +26,8 @@ export default function ImportantDates() {
     },
     {
       event: "Acceptance Notification to Authors",
-      date: "August 10, 2026",
+      date: "August 20, 2026",
+      previousDate: "August 10, 2026",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +148,7 @@ export default function ImportantDates() {
                       </p>
                       {item.previousDate && (
                         <p className="text-xs font-semibold uppercase tracking-wide text-green-700">
-                          Extended Deadline
+                          Extended
                         </p>
                       )}
                     </div>
