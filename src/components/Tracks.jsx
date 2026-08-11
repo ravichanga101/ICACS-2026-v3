@@ -4,6 +4,183 @@ export default function Tracks() {
   const tracks = [
     {
       number: 1,
+      title: "Artificial Intelligence",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+          />
+        </svg>
+      ),
+      topics: [
+        "Deep Learning and Neural Networks",
+        "Natural Language Processing",
+        "Computer Vision and Image Processing",
+        "Reinforcement Learning",
+        "Knowledge Representation and Reasoning",
+        "Explainable AI and Ethical Considerations",
+      ],
+      color: "from-blue-500 to-blue-600",
+    },
+    {
+      number: 2,
+      title: "Communication Technologies",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+          />
+        </svg>
+      ),
+      topics: [
+        "5G/6G Networks and Beyond",
+        "Wireless Sensor Networks",
+        "Internet of Things (IoT) Communication",
+        "Network Security and Privacy",
+        "Optical Communications",
+        "Satellite and Space Communications",
+      ],
+      color: "from-green-500 to-green-600",
+    },
+    {
+      number: 3,
+      title: "Smart Cities",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+          />
+        </svg>
+      ),
+      topics: [
+        "Smart Urban Planning and Development",
+        "Intelligent Transportation Systems",
+        "Smart Energy Management",
+        "Smart Healthcare and Emergency Services",
+        "Environmental Monitoring and Sustainability",
+        "Smart Buildings and Infrastructure",
+      ],
+      color: "from-purple-500 to-purple-600",
+    },
+    // {
+    //   number: 4,
+    //   title: "Data Science and Analytics",
+    //   icon: (
+    //     <svg
+    //       xmlns="http://www.w3.org/2000/svg"
+    //       className="h-8 w-8"
+    //       fill="none"
+    //       viewBox="0 0 24 24"
+    //       stroke="currentColor"
+    //     >
+    //       <path
+    //         strokeLinecap="round"
+    //         strokeLinejoin="round"
+    //         strokeWidth={2}
+    //         d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+    //       />
+    //     </svg>
+    //   ),
+    //   topics: [
+    //     "Big Data Analytics",
+    //     "Predictive Analytics",
+    //     "Data Mining and Knowledge Discovery",
+    //     "Business Intelligence",
+    //     "Statistical Modeling and Analysis",
+    //     "Data Visualization and Interpretation",
+    //   ],
+    //   color: "from-orange-500 to-orange-600",
+    // },
+    // {
+    //   number: 5,
+    //   title: "Cybersecurity and Blockchain",
+    //   icon: (
+    //     <svg
+    //       xmlns="http://www.w3.org/2000/svg"
+    //       className="h-8 w-8"
+    //       fill="none"
+    //       viewBox="0 0 24 24"
+    //       stroke="currentColor"
+    //     >
+    //       <path
+    //         strokeLinecap="round"
+    //         strokeLinejoin="round"
+    //         strokeWidth={2}
+    //         d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+    //       />
+    //     </svg>
+    //   ),
+    //   topics: [
+    //     "Network and Infrastructure Security",
+    //     "Cryptography and Data Protection",
+    //     "Blockchain Applications and Technologies",
+    //     "IoT Security",
+    //     "Threat Intelligence and Incident Response",
+    //     "Security in Cloud Computing",
+    //   ],
+    //   color: "from-red-500 to-red-600",
+    // },
+    // {
+    //   number: 6,
+    //   title: "Emerging Technologies",
+    //   icon: (
+    //     <svg
+    //       xmlns="http://www.w3.org/2000/svg"
+    //       className="h-8 w-8"
+    //       fill="none"
+    //       viewBox="0 0 24 24"
+    //       stroke="currentColor"
+    //     >
+    //       <path
+    //         strokeLinecap="round"
+    //         strokeLinejoin="round"
+    //         strokeWidth={2}
+    //         d="M13 10V3L4 14h7v7l9-11h-7z"
+    //       />
+    //     </svg>
+    //   ),
+    //   topics: [
+    //     "Quantum Computing",
+    //     "Extended Reality (AR/VR/MR)",
+    //     "Edge Computing",
+    //     "Digital Twins",
+    //     "Human-Computer Interaction",
+    //     "Robotics and Autonomous Systems",
+    //   ],
+    //   color: "from-indigo-500 to-indigo-600",
+    // },
+  ];
+  /*
+const tracks = [
+    {
+      number: 1,
       title: "AI and Machine Learning",
       icon: (
         <svg
@@ -177,7 +354,7 @@ export default function Tracks() {
       color: "from-indigo-500 to-indigo-600",
     },
   ];
-
+*/
   return (
     <section id="tracks" className="py-12 bg-white">
       <div className="container mx-auto px-6">
