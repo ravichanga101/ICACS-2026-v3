@@ -48,7 +48,8 @@ export default function ImportantDates() {
     },
     {
       event: "Submission of Full Length Paper",
-      date: "August 25, 2026",
+      date: "September 4, 2026",
+      previousDate: "August 25, 2026",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
