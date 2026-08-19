@@ -26,7 +26,7 @@ export default function ImportantDates() {
     },
     {
       event: "Acceptance Notification to Authors",
-      date: "August 20, 2026",
+      date: "September 20, 2026",
       previousDate: "August 10, 2026",
       icon: (
         <svg
@@ -48,7 +48,7 @@ export default function ImportantDates() {
     },
     {
       event: "Submission of Full Length Paper",
-      date: "September 4, 2026",
+      date: "October 20, 2026",
       previousDate: "August 25, 2026",
       icon: (
         <svg
@@ -70,7 +70,7 @@ export default function ImportantDates() {
     },
     {
       event: "Conference Date",
-      date: "September 18, 2026",
+      date: "November 20, 2026",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
