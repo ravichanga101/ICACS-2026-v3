@@ -5,6 +5,14 @@ export default function Footer() {
   return (
     <footer className="bg-gray-100 py-6">
       <div className="container mx-auto px-6">
+        {/* <div className="flex flex-col items-center mb-4">
+          
+          <img
+            src="/assets/img/gujcost-logo.jfif"
+            alt="GUJCOST Logo"
+            className="h-12 object-contain"
+          />
+        </div> */}
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-gray-600">
             © Copyright 2025-26 CHARUSAT - All rights reserved.

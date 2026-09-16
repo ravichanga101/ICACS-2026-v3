@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import FinancialSupport from "../components/FinancialSupport";
 import About from "../components/About";
 import ImportantDates from "../components/ImportantDates";
 import CallForPapers from "../components/CallForPapers";
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <FinancialSupport />
       <ConferenceDescription />
       <About />
       <ImportantDates />
