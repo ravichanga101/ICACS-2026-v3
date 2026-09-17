@@ -72,6 +72,26 @@ export default function Hero() {
                 Submit Paper
               </a>
             </div>
+
+            <div className="mt-6 pt-4 border-t border-gray-200/70 animate-fadeIn animation-delay-500">
+              <div className="flex items-center justify-center gap-4">
+                <img
+                  src="/assets/img/logos/gujcos_logo.jpeg"
+                  alt="GUJCOST Logo"
+                  className="h-10 md:h-12 w-auto object-contain rounded bg-white/60 p-1"
+                />
+                <img
+                  src="/assets/img/logos/dst_logo.jpeg"
+                  alt="DST Logo"
+                  className="h-10 md:h-12 w-auto object-contain rounded bg-white/60 p-1"
+                />
+                <img
+                  src="/assets/img/springer_logo.jpg"
+                  alt="Springer Logo"
+                  className="h-10 md:h-12 w-auto object-contain rounded bg-white/60 p-1"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
