@@ -26,8 +26,8 @@ export default function ImportantDates() {
     },
     {
       event: "Acceptance Notification to Authors",
-      date: "September 20, 2026",
-      previousDate: "August 10, 2026",
+      date: "September 30, 2026",
+      previousDate: "September 20, 2026",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
