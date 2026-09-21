@@ -6,122 +6,123 @@ export default function TechnicalReviewCommittee() {
       srNo: 1,
       name: "Pinalkumar Engineer",
       affiliation: "Sardar Vallabhbhai National Institute of Technology, Surat",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 2,
       name: "Surajit Das",
       affiliation: "National Institute of Technology, Agartala",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 3,
       name: "Tzung-Pei Hong",
       affiliation: "National University of Kaohsiung",
-      country: "Taiwan"
+      country: "Taiwan",
     },
     {
       srNo: 4,
       name: "Dilip A. Patel",
       affiliation: "Sardar Vallabhbhai National Institute of Technology, Surat",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 5,
       name: "Vandana Sharma",
       affiliation: "Christ University, Delhi-NCR",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 6,
       name: "Ankit Chouhan",
       affiliation: "University of Regina, Canada",
-      country: "Canada"
+      country: "Canada",
     },
     {
       srNo: 7,
-      name: "Madonna Lamin",
-      affiliation: "ITM (SLS) Baroda University",
-      country: "India"
+      name: "Bhargav Shukla",
+      affiliation: "Microsoft",
+      country: "USA",
     },
     {
       srNo: 8,
       name: "Jaishree Tailor",
       affiliation: "L&T Technology Services, Vadodara",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 9,
       name: "Purvin Talati",
       affiliation: "Qualcomm",
-      country: "USA"
+      country: "USA",
     },
     {
       srNo: 10,
       name: "Hemant Ghayvat",
       affiliation: "Linnaeus University",
-      country: "Sweden"
+      country: "Sweden",
     },
     {
       srNo: 11,
       name: "Narinder Sharma",
       affiliation: "Amritsar Group of Colleges, Punjab",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 12,
       name: "Shilpa Githe",
       affiliation: "Symbiosis Institute of Technology, Pune",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 13,
       name: "Dharmen Punjani",
       affiliation: "Cencora PharmaLex GmbH",
-      country: "Germany"
+      country: "Germany",
     },
     {
       srNo: 14,
       name: "Peeyush Chowdhary",
       affiliation: "MBM University, Jodhpur",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 15,
       name: "Jagadish.G.Kori",
-      affiliation: "Government Sri Krishnarajendra Silver Jubilee Technological Institute",
-      country: "India"
+      affiliation:
+        "Government Sri Krishnarajendra Silver Jubilee Technological Institute",
+      country: "India",
     },
     {
       srNo: 16,
       name: "Sachin Bakre",
       affiliation: "Visvesvaraya National Institute of Technology Nagpur",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 17,
       name: "Ashish Talati",
       affiliation: "Qualcomm",
-      country: "USA"
+      country: "USA",
     },
     {
       srNo: 18,
       name: "Purnanand P.Savoikar",
       affiliation: "Goa College of Engineering, Goa",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 19,
       name: "Ajay Sharma",
       affiliation: "MBM University, Jodhpur",
-      country: "India"
+      country: "India",
     },
     {
       srNo: 20,
-      name: "Bhargav Shukla",
-      affiliation: "Microsoft",
-      country: "USA"
-    }
+      name: "Bela Shah",
+      affiliation: "Parul University, Vadodara",
+      country: "India",
+    },
   ];
 
   return (
