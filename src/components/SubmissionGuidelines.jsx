@@ -76,7 +76,7 @@ const SubmissionGuidelines = () => {
   ];
 
   const importantNotes = [
-    "At least one of the authors of an accepted paper needs to register for the conference and to present the paper(s), through an Online Mode presentation.",
+    "At least one of the authors of an accepted paper needs to register for the conference and to present the paper(s), through an Hybrid Mode presentation.",
     "NOTE: Acceptance of a full-length submission is strictly based on the reviewers' comments.",
   ];
 
