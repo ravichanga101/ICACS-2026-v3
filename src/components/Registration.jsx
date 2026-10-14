@@ -181,7 +181,7 @@ export default function Registration() {
         </div>
 
         {/* Payment Details */}
-        <div className="max-w-6xl mx-auto mb-12">
+        {/* <div className="max-w-6xl mx-auto mb-12">
           <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
               <CreditCard className="w-6 h-6 text-blue-600 mr-2" />
@@ -247,7 +247,7 @@ export default function Registration() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Important Notes */}
         <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg max-w-6xl mx-auto mb-8">
