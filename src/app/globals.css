@@ -56,6 +56,23 @@ body {
   animation-fill-mode: forwards;
 }
 
+/* Blinking attention animation for the accepted papers button */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(253, 126, 20, 0.6);
+  }
+  50% {
+    opacity: 0.75;
+    box-shadow: 0 0 0 8px rgba(253, 126, 20, 0);
+  }
+}
+
+.animate-blink {
+  animation: blink 1.4s ease-in-out infinite;
+}
+
 /* Superscript styling for dates */
 sup {
   font-size: 0.75em;

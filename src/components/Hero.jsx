@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import AcceptedPapersModal from "./AcceptedPapersModal";
 
 const submissionPortalUrl = "https://cmt3.research.microsoft.com/SICACS2026";
 
@@ -63,14 +64,15 @@ export default function Hero() {
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3 md:gap-4 justify-center animate-fadeIn animation-delay-500">
-              <a
+              {/* <a
                 href={submissionPortalUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#1869b4] hover:bg-[#145a96] text-white font-medium py-2 px-5 md:px-6 rounded-md transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 text-sm md:text-base"
               >
                 Submit Paper
-              </a>
+              </a> */}
+              <AcceptedPapersModal />
             </div>
 
             <div className="mt-6 pt-4 border-t border-gray-200/70 animate-fadeIn animation-delay-500">
