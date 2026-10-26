@@ -61,7 +61,7 @@ const Downloads = () => {
         {
           id: 3,
           name: "PowerPoint Presentation Template",
-          file: "/assets/files/Template-ICACS2025.pptx",
+          file: "/assets/files/Template-ICACS2026.pptx",
           type: "PPTX",
           size: "5.1 MB",
           description: "Template for conference presentations",
