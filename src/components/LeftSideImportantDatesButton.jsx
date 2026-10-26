@@ -19,7 +19,7 @@ export default function LeftSideImportantDatesButton() {
   return (
     <div className="fixed left-0 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-2">
       {/* Submit Paper Button */}
-      <a
+      {/* <a
         aria-label="Submit Paper"
         href={submissionPortalUrl}
         target="_blank"
@@ -31,7 +31,7 @@ export default function LeftSideImportantDatesButton() {
             Submit Paper
           </span>
         </span>
-      </a>
+      </a> */}
 
       {/* Important Dates Button */}
       <button
