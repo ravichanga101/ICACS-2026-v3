@@ -1,314 +1,263 @@
 [
   {
-    "sr": 1,
     "paperId": 73,
     "title": "Bridging Third-Person Models and First-Person Action Recognition Using Deep Learning",
     "author": "Harsh Patel",
     "coauthors": "Dr. Purvi Prajapati ; Dr. Nirav Bhatt"
   },
   {
-    "sr": 2,
-    "paperId": 94,
-    "title": "Deep Learning Models to Predict the Risk of Coronary Artery Disease using Echocardiography Images: A Holistic Approach of Transfer Learning and Ensemble Techniques",
-    "author": "Sandhia K",
-    "coauthors": "Kashish Jain ; Ananya Agrawal"
-  },
-  {
-    "sr": 3,
     "paperId": 141,
     "title": "Big data visualization best practices for enhanced data-driven decision-making in organizations.",
     "author": "Jacobus van Deventer",
     "coauthors": "Kamogelo Malatsi"
   },
   {
-    "sr": 4,
     "paperId": 142,
     "title": "The implementation and impact of big data models within healthcare.",
     "author": "Jacobus van Deventer",
     "coauthors": "Leze Taylor"
   },
   {
-    "sr": 5,
     "paperId": 155,
     "title": "A Comprehensive Survey on Distributed and Blockchain-Based Consensus Algorithms: Models, Mechanisms, and Future Directions",
     "author": "Ashishkumar Gor",
     "coauthors": "Neha Fotedar"
   },
   {
-    "sr": 6,
     "paperId": 179,
     "title": "GIS-Integrated AI Model for Predictive Maintenance of Urban Road Infrastructure using Traffic, Weather, and Spatial Data Analytics",
     "author": "Pratima Shah",
     "coauthors": "Vishal Gor ; Ankit Patel ; Jignesh Patel ; Nishant Kotiya"
   },
   {
-    "sr": 7,
     "paperId": 188,
     "title": "A Comprehensive Review on Explainable Multimodal Deep Learning for Fashion Analytics",
     "author": "Monika Chauahn",
     "coauthors": "-"
   },
   {
-    "sr": 8,
     "paperId": 219,
     "title": "Explainable Hybrid CNN–Vision Transformer Framework for Multi-Class Gallbladder Disease Classification from Ultrasound Images",
     "author": "Meet Kamlesh Raval",
     "coauthors": "Vaibhav Gandhi ; Dhvani Vipulkumar Upadhyay"
   },
   {
-    "sr": 9,
     "paperId": 278,
     "title": "Advanced Sustainable Design of Steel Cavity Shear Walls with Optimized Bolt Distribution: A Comprehensive Parametric Investigation",
     "author": "Nirpex Patel",
     "coauthors": "Raj Dalwadi ; Vijaykumar Panchal"
   },
   {
-    "sr": 10,
     "paperId": 338,
     "title": "Metal Surface Defect Classification Using YOLOv8",
     "author": "Boopathy S",
     "coauthors": "Natarajan, Ramkumar; Nagasirisha, B; Mamillu, Y; Vamsy Krishna, B; Kokilamani, S"
   },
   {
-    "sr": 11,
     "paperId": 340,
     "title": "A Decoupled Geospatial Decision Support System for Strategic Afforestation in Nagpur",
     "author": "Riddhi Doshi",
     "coauthors": "Kanak Tembhurne ; Ashlesha Singh ; Parth Jirappure ; Rohan Sanjay Misalwar"
   },
   {
-    "sr": 12,
     "paperId": 348,
     "title": "Multi-Angle and Temporal Verification-Based Face Recognition System for Real-Time Attendance Monitoring",
     "author": "Monica S",
     "coauthors": "N, Nagapriya ; Singh R, Roopika ; Manasa, N ; Muddasir N, Dr. Mohammed"
   },
   {
-    "sr": 13,
     "paperId": 353,
     "title": "Explainable Deep Learning Approaches for Early-Stage Alzheimer’s Disease Diagnosis: A Review",
     "author": "Bhailal Limbasiya",
     "coauthors": "Gagnani, Dr. Lokesh"
   },
   {
-    "sr": 14,
     "paperId": 358,
     "title": "E-WOM to Purchase Intention: How Credibility, Trust, Helpfulness and Quality Shape Young Women’s Personal Care Products Purchase Choices Through a Social Influence Theory Lens",
     "author": "Amrutha S",
     "coauthors": "Firdaus Bashir"
   },
   {
-    "sr": 15,
     "paperId": 363,
     "title": "Quality Assessment of Machine Translation Systems for Gujarati: Insights from Human and Metric-Based Evaluation",
     "author": "Bhavika Gambhava",
     "coauthors": "Nikita Desai ; Ashish Gor"
   },
   {
-    "sr": 16,
     "paperId": 409,
     "title": "Sliding Mode Control in Autonomous Aerial Vehicles using AI/ML Techniques",
     "author": "YOGESH KUSHWAH",
     "coauthors": "-"
   },
   {
-    "sr": 17,
     "paperId": 422,
     "title": "Short Term Wind Power Forecasting Using Deep Learning Models for South Asian Wind Corridor",
     "author": "Waleed Raza",
     "coauthors": "Mihirkumar Patel ; Menaka Rathnayake ; Md Jakirul Islam Jony Prothan ; Farzaneh Eslami ; Olga Lavrova"
   },
   {
-    "sr": 18,
     "paperId": 425,
     "title": "Multimodal Graph Neural Network-Based Recommendation Systems: A Systematic Review and Research Directions",
     "author": "SANJAY BHALGAMA",
     "coauthors": "Gagnani, Lokesh"
   },
   {
-    "sr": 19,
     "paperId": 430,
     "title": "Crop Disease Detection and Classification Using Deep Learning: A Critical Systematic Review of Recent Advances and Open Challenges",
     "author": "Narendrasinh Limbad",
     "coauthors": "Gagnani, Lokesh"
   },
   {
-    "sr": 20,
     "paperId": 453,
     "title": "A Survey of Fuzzy Logic, Feature Selection, and Ensemble Learning Techniques for Aspect-Based Sentiment Analysis",
     "author": "Shaktisinh Parmar",
     "coauthors": "Barot, Dr. Mehul"
   },
   {
-    "sr": 21,
     "paperId": 467,
     "title": "Feature-Based Facial Image Generation Using Deep learning",
     "author": "Riddhi Doshi",
     "coauthors": "Arpita Waghmare ; Sampada Bandre ; Lavanya Tiwade ; P R Abhishek"
   },
   {
-    "sr": 22,
     "paperId": 484,
     "title": "A Secure Methodology for Integrating PKCS#11 Hardware Digital Signature Certificate Tokens into Email Systems",
     "author": "Mitesh Vyas",
     "coauthors": "Kalpesh Wandra"
   },
   {
-    "sr": 23,
     "paperId": 499,
     "title": "Smart Water Distribution Leakage Detection Using IoT Sensors and Machine Learning",
     "author": "Rahul More",
     "coauthors": "-"
   },
   {
-    "sr": 24,
     "paperId": 501,
     "title": "Edge-Optimized YOLO-Based Wildlife Intrusion Detection Using Model Compression for Sustainable Forest Monitoring",
     "author": "Rahul More",
     "coauthors": "-"
   },
   {
-    "sr": 25,
     "paperId": 502,
     "title": "Deep Learning-Based Automated Detection of Early Zoonotic Risk Using Wildlife Surveillance Video Analytics",
     "author": "Rahul More",
     "coauthors": "Deshmukh, Suruchi ; Patil, Viddulata ; Shitole, Manisha ; Chandre, Pankaj"
   },
   {
-    "sr": 26,
     "paperId": 503,
     "title": "AI-Driven Smart Energy Load Forecasting Using Hybrid LSTM–Transformer Models with Attention-Based Temporal Modeling",
     "author": "Rahul More",
     "coauthors": "Chandre, Pankaj ; Patil, Swapnil"
   },
   {
-    "sr": 27,
     "paperId": 510,
     "title": "Explainable Hybrid Machine Learning Framework for Context-Aware Personalized Tourism Destination Recommendation Using User Behavior Analytics",
     "author": "Bhoomi Bangoria",
     "coauthors": "Tusharkumar Bangoria"
   },
   {
-    "sr": 28,
     "paperId": 512,
     "title": "Health Haven: A Web-Based Hospital Management System",
     "author": "Indrajeet Kumar",
     "coauthors": "Mitulkumar Raj ; Megha Patel ; Meenakshi Kashyap ; Indrajeet Kumar ; Ewelina Idziak"
   },
   {
-    "sr": 29,
     "paperId": 520,
     "title": "EduBot: A Generative AI-Enabled Educational Platform for Personalized Learning, Automated Assessment, and Real-Time Student Support",
     "author": "Yasir Abdullah R",
     "coauthors": "-"
   },
   {
-    "sr": 30,
     "paperId": 571,
     "title": "Non-Invasive Point-of-Care Near-Field Microwave Sen-sor for Early Detection and Monitoring of Dehydration",
     "author": "Manikandan Chinnusami",
     "coauthors": "Biyyapu Hari Keerthi ; Arunapreethi K.S ; Rajesh Anbazhagan ; Abirami Karthikeyan ; Maheswari Rajnarayanan"
   },
   {
-    "sr": 31,
     "paperId": 577,
     "title": "From Machine Learning to Explainable Multimodal AI: A Systematic Review of Artificial Intelligence for Anemia Detection and Prediction",
     "author": "Neha Minocha",
     "coauthors": "Komal Thummar"
   },
   {
-    "sr": 32,
     "paperId": 582,
     "title": "Comparative Analysis of Deep Learning Architectures for Diabetic Retinopathy Grading Using the APTOS-2019 Dataset",
     "author": "Zarana Gajjar",
     "coauthors": "Dr. Shahidmohammed Modasiya"
   },
   {
-    "sr": 33,
     "paperId": 585,
-    "title": "Machine Learning-assisted Routing Protocol (MLRP) for Energy Efficient Data Dissemination in Urban VANETs",
+    "title": "Machine Learning-assisted Routing Protocol (MLRP) for Energy E cient Data Dissemination in Urban VANETs for Smart City",
     "author": "Amit Choksi",
-    "coauthors": "-"
+    "coauthors": "Vishvjit Thakar; Pratik Vyas"
   },
   {
-    "sr": 34,
     "paperId": 586,
     "title": "A Daubechies wavelet infused ResUNet Architecture for accurate brain tumor segmentation",
     "author": "Mredula Pyarelal KP",
     "coauthors": "Maheshvari Sagar"
   },
   {
-    "sr": 35,
     "paperId": 596,
     "title": "Big Data and Statistical Approaches for Evaluating Digital Government Maturity: Evidence from Global EGDI Indicators",
     "author": "Ani Grigoryan",
     "coauthors": "-"
   },
   {
-    "sr": 36,
     "paperId": 599,
     "title": "Empirical Evaluation of Short-Term Stock Return Predictability Using Machine Learning and Statistical Analysis",
     "author": "Roshan Jathanna",
     "coauthors": "Palla, Sai Adarsh ; Aithal, Prakash K"
   },
   {
-    "sr": 37,
     "paperId": 600,
     "title": "Implementation and Comparative Analysis of AI-Based Models for Cryptocurrency Price Prediction",
     "author": "Bela Shrimali",
     "coauthors": "Sohil Shah ; Ashwin Raiyani ; Ravij Bharadwaj ; Sarthak Joshi ; Smit Kadvani"
   },
   {
-    "sr": 38,
     "paperId": 617,
     "title": "Comparative Analysis of Standard and Lightweight CNN Architectures for Facial Deepfake Detection",
     "author": "Dharmishtha Makwana",
     "coauthors": "-"
   },
   {
-    "sr": 39,
     "paperId": 638,
     "title": "Toward Real-Time Streaming Architectures for Scalable Fake News Detection: A Confidence-Gated Tiered Desig",
     "author": "Drashti soni",
     "coauthors": "-"
   },
   {
-    "sr": 40,
     "paperId": 640,
     "title": "A Multi-Modal Feature Fusion Framework for Skin Cancer Detection Using Concatenated Deep Learning Models",
     "author": "Rupal Kapdi",
     "coauthors": "Akhilesh Gajjar ; Snehal Rajput"
   },
   {
-    "sr": 41,
     "paperId": 652,
     "title": "Hour-Ahead PM 2.5 Forecasting Using Histogram-Based Gradient Boosting",
     "author": "Tarjni Vyas",
     "coauthors": "Dhruvi Patel ; Radha Popat ; Urvashi Mesariya"
   },
   {
-    "sr": 42,
     "paperId": 658,
     "title": "Investigation of Radio Waves Exposure on Castor (Ricinus communis)",
     "author": "Chandni Upadhyaya",
     "coauthors": "Trushit Upadhyaya ; Upesh Patel ; Arpita Patel ; Killol Pandya ; Aneri Pandya ; Hiren Patel ; Merih Palandoken"
   },
   {
-    "sr": 43,
     "paperId": 660,
     "title": "Semantic Resume Retrieval for Intelligent Recruitment: A Systematic Review",
     "author": "Dev Pathak",
     "coauthors": "Poojan Brahmbhatt ; Jayneel Brahmbhatt ; Parth Goel"
   },
   {
-    "sr": 44,
     "paperId": 663,
     "title": "Artificial Intelligence for Sustainable Smart Cities: An Integrated Framework for Intelligent Decision-Making, Energy Optimization, and Urban Resilience",
     "author": "Dr.Sundaresh Kumarasamy",
     "coauthors": "Karikalan , Dr.Balaji ; S, Dr.Venkatesh ; George, Dr.Jasmine"
   },
   {
-    "sr": 45,
     "paperId": 693,
     "title": "Human–AI Collaboration in Technical Communication: Evidence from a Mixed-Methods Study in Gujarat",
     "author": "Bhaskar Pandya",
