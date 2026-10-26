@@ -84,14 +84,14 @@ export default function AcceptedPapersModal() {
             <div className="overflow-auto flex-1 bg-gray-50 md:bg-white">
               {/* Mobile: card list */}
               <ul className="md:hidden p-3 space-y-3">
-                {acceptedPapers.map((paper) => (
+                {acceptedPapers.map((paper, index) => (
                   <li
                     key={paper.paperId}
                     className="bg-white rounded-lg border border-gray-200 shadow-sm p-4"
                   >
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-xs font-semibold text-white bg-[#1869b4] rounded-full px-2.5 py-0.5">
-                        #{paper.sr}
+                        #{index + 1}
                       </span>
                       <span className="text-xs font-semibold text-[#fd7e14] bg-orange-50 border border-orange-200 rounded-full px-2.5 py-0.5">
                         Paper ID: {paper.paperId}
@@ -140,13 +140,13 @@ export default function AcceptedPapersModal() {
                   </tr>
                 </thead>
                 <tbody>
-                  {acceptedPapers.map((paper) => (
+                  {acceptedPapers.map((paper, index) => (
                     <tr
                       key={paper.paperId}
                       className="odd:bg-white even:bg-gray-50 hover:bg-blue-50 transition-colors"
                     >
                       <td className="px-3 sm:px-4 py-3 border-b border-gray-100 text-gray-700">
-                        {paper.sr}
+                        {index + 1}
                       </td>
                       <td className="px-3 sm:px-4 py-3 border-b border-gray-100 text-gray-700">
                         {paper.paperId}
