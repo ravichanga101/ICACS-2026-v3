@@ -31,7 +31,6 @@ export default function Registration() {
   ];
 
   const importantNotes = [
-    "Registration fees are non-refundable and non-transferable",
     "At least one author must register for each accepted paper",
     "Student registration requires valid student ID proof",
     "Registration fee includes GST (for domestic participants)",
@@ -270,6 +269,16 @@ export default function Registration() {
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* Refund Policy */}
+        <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg max-w-6xl mx-auto mb-8">
+          <h3 className="text-xl font-bold text-gray-800 mb-2">
+            Refund Policy
+          </h3>
+          <p className="text-gray-700">
+            All registration fees are non-refundable and non-transferable.
+          </p>
         </div>
 
         {/* Registration Button */}
