@@ -278,6 +278,9 @@ export default function Registration() {
           </h3>
           <p className="text-gray-700">
             All registration fees are non-refundable and non-transferable.
+            However, in exceptional cases, a refund may be considered after the
+            conclusion of the conference, subject to the sole discretion and
+            approval of the Convener.
           </p>
         </div>
 
