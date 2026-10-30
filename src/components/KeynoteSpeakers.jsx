@@ -23,8 +23,7 @@ const keynotes = [
   },
   {
     session: 2,
-    title:
-      "AI in Intelligent transportation systems for making our cities smart",
+    title: "Intelligent Transportation Systems in Smart Cities",
     name: "Dr. Mohammad Shafi Mir",
     affiliation:
       "Professor, Department of Civil Engineering, National Institute of Technology, Srinagar",
