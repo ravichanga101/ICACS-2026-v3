@@ -16,7 +16,7 @@ const keynotes = [
   {
     session: 1,
     title:
-      "Development of adaptive signal processing and machine learning algorithms for audio signal processing",
+      "Advances in Microphone Array Signal Processing",
     name: "Prof. Nitin V. George",
     affiliation: "Professor, Indian Institute of Technology Gandhinagar",
     image: "/assets/img/keynote/NitinVGeorge.png",
