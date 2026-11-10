@@ -17,11 +17,13 @@ import ContactUs from "../components/ContactUs";
 import ConferenceDescription from "../components/ConferenceDescription";
 import ScrollToTop from "../components/ScrollToTop";
 import LeftSideImportantDatesButton from "../components/LeftSideImportantDatesButton";
+import ScheduleHighlight from "../components/ScheduleHighlight";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <ScheduleHighlight />
       <FinancialSupport />
       <ConferenceDescription />
       <About />

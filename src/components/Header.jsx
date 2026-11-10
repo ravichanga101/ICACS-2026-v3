@@ -158,6 +158,12 @@ export default function Header() {
           >
             Speakers
           </Link>
+          <Link
+            href="/downloads#schedules"
+            className="text-[#fd7e14] hover:text-orange-700 font-semibold px-3 py-2 rounded-md bg-orange-50 transition"
+          >
+            Schedule
+          </Link>
 
           <Link
             href="/publication"
@@ -268,6 +274,13 @@ export default function Header() {
                 onClick={handleMobileLinkClick}
               >
                 Keynote Speakers
+              </Link>
+              <Link
+                href="/downloads#schedules"
+                className="py-2 font-semibold text-[#fd7e14] border-b border-gray-100"
+                onClick={handleMobileLinkClick}
+              >
+                Schedule
               </Link>
               <Link
                 href="/#editors"
