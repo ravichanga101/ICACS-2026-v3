@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import PresentationSchedule from "./PresentationSchedule";
 import {
   CalendarDays,
   Download,
@@ -47,8 +48,7 @@ const Downloads = () => {
     {
       id: "presentations",
       name: "Accepted Research Papers Presentation Schedule",
-      file: "/assets/files/info/ICACS_2026_detailed_Schedule.docx",
-      type: "DOCX",
+      type: "HTML",
       description: "Detailed schedule of accepted paper presentations",
     },
     {
@@ -239,9 +239,8 @@ const Downloads = () => {
                 ICACS 2026 Schedules
               </h2>
               <p className="mt-2 text-gray-600">
-                View the conference program online or download the paper
-                presentation schedule. The keynote schedule is also available
-                online.
+                View the conference program, paper presentation schedule, and
+                keynote schedule online.
               </p>
             </div>
           </div>
@@ -267,7 +266,6 @@ const Downloads = () => {
                   </div>
                 </div>
                 <div className="mt-auto pt-5">
-                  {schedule.id !== "presentations" ? (
                     <button
                       type="button"
                       onClick={() => setSelectedSchedule(schedule)}
@@ -276,16 +274,6 @@ const Downloads = () => {
                       <Eye className="h-4 w-4" aria-hidden="true" />
                       View schedule
                     </button>
-                  ) : (
-                    <a
-                      href={schedule.file}
-                      download
-                      className="mt-4 inline-flex items-center gap-2 rounded-md bg-[#1869b4] px-4 py-2 font-medium text-white transition hover:bg-blue-800"
-                    >
-                      <Download className="h-4 w-4" aria-hidden="true" />
-                      Download schedule
-                    </a>
-                  )}
                 </div>
               </article>
             ))}
@@ -327,7 +315,7 @@ const Downloads = () => {
                 <div className="min-h-0 flex-1 overflow-y-auto bg-gradient-to-b from-blue-50 to-white p-4 sm:p-8">
                   <article
                     className={`mx-auto w-full ${
-                      selectedSchedule.id === "keynotes"
+                      selectedSchedule.id !== "conference"
                         ? "max-w-7xl"
                         : "max-w-4xl"
                     } overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg`}
@@ -349,7 +337,7 @@ const Downloads = () => {
                       <p className="mt-2 font-semibold text-[#fd7e14]">
                         ICACS 2026 · November 20, 2026
                       </p>
-                      {selectedSchedule.id === "keynotes" && (
+                      {selectedSchedule.id !== "conference" && (
                         <p className="mt-1 text-sm font-medium text-gray-600">
                           Hybrid Mode
                         </p>
@@ -357,6 +345,10 @@ const Downloads = () => {
                     </header>
 
                     <div className="p-4 sm:p-6 lg:p-8">
+                      {selectedSchedule.id === "presentations" ? (
+                        <PresentationSchedule />
+                      ) : (
+                        <>
                       <h4 className="mb-4 text-xl font-bold text-gray-900">
                         {selectedSchedule.id === "keynotes"
                           ? "Keynote Speech Schedule"
@@ -477,6 +469,8 @@ const Downloads = () => {
                           </tbody>
                         </table>
                       </div>
+                        </>
+                      )}
                     </div>
                   </article>
                 </div>

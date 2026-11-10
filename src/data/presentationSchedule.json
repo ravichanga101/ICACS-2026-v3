@@ -1,0 +1,585 @@
+[
+  {
+    "paragraphs": [
+      "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities (ICACS 2026)",
+      "(Hybrid Mode)",
+      "Conference Date: November 20, 2026",
+      "Overview of Parallel Sessions (5 Online and 1 Offline)",
+      "(Slot – I: 12:10 PM – 01:10 PM; Slot – II: 02:10 PM – 03:10 PM)"
+    ],
+    "rows": [
+      [
+        "Track No.",
+        "Track Name",
+        "Mode",
+        "No. of papers"
+      ],
+      [
+        "01-A",
+        "Artificial Intelligence & Machine Learning",
+        "Online (Microsoft Teams Meeting)",
+        "9"
+      ],
+      [
+        "01-B",
+        "Artificial Intelligence & Machine Learning",
+        "Online (Microsoft Teams Meeting)",
+        "9"
+      ],
+      [
+        "01-C",
+        "Artificial Intelligence & Machine Learning",
+        "Online (Microsoft Teams Meeting)",
+        "10"
+      ],
+      [
+        "02",
+        "Communication Technologies",
+        "Online (Microsoft Teams Meeting)",
+        "3"
+      ],
+      [
+        "03",
+        "Smart Cities",
+        "Online (Microsoft Teams Meeting)",
+        "7"
+      ],
+      [
+        "04",
+        "All Tracks",
+        "(Offline)\nRoom No.: 106, Ground Floor, A6 building (EC/EE/AIML Building), CHARUSAT Campus",
+        "7"
+      ],
+      [
+        "Total Number of Papers",
+        "45"
+      ]
+    ]
+  },
+  {
+    "paragraphs": [
+      "Each presentation is allocated a 10-minute duration, inclusive of the Q&A session. The conference schedule comprises 45 research papers, including 38 online presentations and 7 offline presentations across Tracks 01-A, 01-B, 01-C, 02, 03, and 04 (offline session to be held at CHARUSAT Campus).",
+      "The presentations are organized in six parallel sessions:",
+      "Slot - I: 12:10 PM – 01:10 PM",
+      "Lunch Break: 01:10 PM – 02:10 PM",
+      "Slot-  II: 02:10 PM – 03:10 PM",
+      "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities (ICACS 2026)",
+      "(Hybrid Mode)",
+      "Conference Date: November 20, 2026",
+      "Event Schedule"
+    ],
+    "rows": [
+      [
+        "Time (IST)",
+        "Event Description"
+      ],
+      [
+        "10:30 AM – 10:45 AM",
+        "Inaugural Ceremony\nSession Coordinator: Prof. Nishat Shaikh\nMicrosoft Teams Meeting:\nhttps://teams.microsoft.com/meet/472092524243628?p=4uSB1hAUUNxep76dbI\nMeeting ID: 472 092 524 243 628\nPasscode: Sv7wu6n8"
+      ],
+      [
+        "11:00 AM – 11:40 AM",
+        "Keynote Speeches (Three Parallel Sessions)"
+      ],
+      [
+        "11:00 AM – 11:40 AM",
+        "Track 1: Dr. Atul Kumar, IBM Research, Bengaluru\nTopic: Dear AI, Let Me Help You (and Check Your Work): Verifiable Agents for Enterprise Software\nSession Coordinator: Prof. Nishat Shaikh\nMicrosoft Teams Meeting:\nhttps://teams.microsoft.com/meet/439379391687834?p=xIIM01KMFC7nuv1sS6\nMeeting ID: 439 379 391 687 834\nPasscode: qz2NV2EE"
+      ],
+      [
+        "11:00 AM – 11:40 AM",
+        "Track 2: Prof. Nitin V. George, IIT Gandhinagar\nTopic: Advances in Microphone Array Signal Processing\nSession Coordinator: Prof. Trusha Patel\nMicrosoft Teams Meeting:\nhttps://teams.microsoft.com/meet/473661768870138?p=8JNTALimHqCwyIKhm1\nMeeting ID: 473 661 768 870 138\nPasscode: mw2TP2kF"
+      ],
+      [
+        "11:00 AM – 11:40 AM",
+        "Track 3: Dr. Mohammad Shafi Mir, NIT Srinagar\nTopic: Intelligent Transportation Systems in Smart Cities\nSession Coordinator: Prof. Kanwar Preet Kaur\nMicrosoft Teams Meeting:\nhttps://teams.microsoft.com/meet/430274943108521?p=cZ2JVnhmJSGzl6ZzzT\nMeeting ID: 430 274 943 108 521\nPasscode: P3Z9RF6g"
+      ],
+      [
+        "11:40 AM – 12:10 PM",
+        "Short Break"
+      ],
+      [
+        "12:10 PM – 01:10 PM",
+        "Slot - I: Tracks 01-A, 01-B, 01-C, 02, 03 (Online) and Track 04 (Offline)"
+      ],
+      [
+        "01:10 PM – 02:10 PM",
+        "Lunch Break"
+      ],
+      [
+        "02:10 PM – 03:10 PM",
+        "Slot - II: Tracks 01-A, 01-B, 01-C, 02, 03 (Online) and Track 04 (Offline)"
+      ],
+      [
+        "03:10 PM – 03:30 PM",
+        "Valedictory Session\nSession Coordinator: Prof. Nishat Shaikh\nMicrosoft Teams Meeting:\nhttps://teams.microsoft.com/meet/488925768388377?p=EyYLLNR2aaHr5ed5iP\nMeeting ID: 488 925 768 388 377\nPasscode: 36cc73Sa"
+      ]
+    ]
+  },
+  {
+    "paragraphs": [
+      "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities (ICACS 2026)",
+      "Conference Date: November 20, 2026",
+      "Presentation Schedule",
+      "Track 01-A: Artificial Intelligence & Machine Learning",
+      "Session Chair: Dr. Jigna A. Patel, Assistant Professor, Department of Computer Science and Engineering, Institute of Technology, Nirma University, Ahmedabad",
+      "Time (IST): Slot - I: 12:10 PM – 01:10 PM; Slot - II: 02:10 PM – 03:10 PM",
+      "Microsoft Teams Meeting: https://teams.microsoft.com/meet/494547279772526?p=JuKZmtH7zdjPrA4DKP",
+      "Meeting ID: 494 547 279 772 526",
+      "Passcode: kz6Cg2cJ",
+      "Session Coordinator: Prof. Dipak Ramoliya"
+    ],
+    "rows": [
+      [
+        "Sr. No.",
+        "Paper ID",
+        "Authors Name",
+        "Paper Title",
+        "Time (IST)"
+      ],
+      [
+        "1",
+        "219",
+        "**Meet Kamlesh Raval**, Vaibhav Gandhi, Dhvani Vipulkumar Upadhyay",
+        "Explainable Hybrid CNN–Vision Transformer Framework for Multi-Class Gallbladder Disease Classification from Ultrasound Images",
+        "12:10 PM to 12:20 PM"
+      ],
+      [
+        "2",
+        "577",
+        "**Neha Minocha**, Komal Thummar",
+        "From Machine Learning to Explainable Multimodal AI: A Systematic Review of Artificial Intelligence for Anemia Detection and Prediction",
+        "12:20 PM to 12:30 PM"
+      ],
+      [
+        "3",
+        "142",
+        "**Jacobus van Deventer**, Leze Taylor",
+        "The implementation and impact of big data models within healthcare.",
+        "12:30 PM to 12:40 PM"
+      ],
+      [
+        "4",
+        "430",
+        "**Narendrasinh Limbad**, Lokesh Gagnani",
+        "Crop Disease Detection and Classification Using Deep Learning: A Critical Systematic Review of Recent Advances and Open Challenges",
+        "12:40 PM to 12:50 PM"
+      ],
+      [
+        "5",
+        "512",
+        "**Indrajeet Kumar**, Mitulkumar Raj, Megha Patel, Meenakshi Kashyap, Ewelina Idziak",
+        "Health Haven: A Web-Based Hospital Management System",
+        "12:50 PM to 01:00 PM"
+      ],
+      [
+        "6",
+        "502",
+        "**Rahul More**, Suruchi Deshmukh, Viddulata Patil, Manisha Shitole, Pankaj Chandre",
+        "Deep Learning-Based Automated Detection of Early Zoonotic Risk Using Wildlife Surveillance Video Analytics",
+        "01:00 PM to 01:10 PM"
+      ],
+      [
+        "Lunch Break"
+      ],
+      [
+        "7",
+        "155",
+        "**Ashishkumar Gor**, Neha Fotedar, Shailja Harshilkumar Patel",
+        "A Comprehensive Survey on Distributed and Blockchain-Based Consensus Algorithms: Models, Mechanisms, and Future Directions",
+        "02:10 PM to 02:20 PM"
+      ],
+      [
+        "8",
+        "484",
+        "**Mitesh Vyas**, Kalpesh Wandra",
+        "A Secure Methodology for Integrating PKCS#11 Hardware Digital Signature Certificate Tokens into Email Systems",
+        "02:20 PM to 02:30 PM"
+      ],
+      [
+        "9",
+        "501",
+        "**Rahul More**",
+        "Edge-Optimized YOLO-Based Wildlife Intrusion Detection Using Model Compression for Sustainable Forest Monitoring",
+        "02:30 PM to 02:40 PM"
+      ]
+    ]
+  },
+  {
+    "paragraphs": [
+      "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities (ICACS 2026)",
+      "Conference Date: November 20, 2026",
+      "Presentation Schedule",
+      "Track 01-B: Artificial Intelligence & Machine Learning",
+      "Session Chair: Prof. Apurva Manubhai Shah, Professor, Department of Computer Science and Engineering, Faculty of Technology and Engineering, The Maharaja Sayajirao University of Baroda, Vadodara",
+      "Time (IST): Slot - I: 12:10 PM – 01:10 PM; Slot - II: 02:10 PM – 03:10 PM",
+      "Microsoft Teams Meeting: https://teams.microsoft.com/meet/46666601032942?p=IxJeQ43z6DxUQRVwB0",
+      "Meeting ID: 466 666 010 329 42",
+      "Passcode: eB2hi927",
+      "Session Coordinator: Dr. Mihir Mehta"
+    ],
+    "rows": [
+      [
+        "Sr. No.",
+        "Paper ID",
+        "Authors Name",
+        "Paper Title",
+        "Time (IST)"
+      ],
+      [
+        "1",
+        "338",
+        "**Boopathy S**, Ramkumar Natarajan, B Nagasirisha, Y Mamillu, B Vamsy Krishna, S Kokilamani",
+        "Metal Surface Defect Classification Using YOLOv8",
+        "12:10 PM to 12:20 PM"
+      ],
+      [
+        "2",
+        "348",
+        "**Monica S**, Nagapriya N, Roopika Singh R, N Manasa, Dr. Mohammed Muddasir N",
+        "Multi-Angle and Temporal Verification-Based Face Recognition System for Real-Time Attendance Monitoring",
+        "12:20 PM to 12:30 PM"
+      ],
+      [
+        "3",
+        "73",
+        "**Harsh Patel**, Dr. Purvi Prajapati, Dr. Nirav Bhatt",
+        "Bridging Third-Person Models and First-Person Action Recognition Using Deep Learning",
+        "12:30 PM to 12:40 PM"
+      ],
+      [
+        "4",
+        "467",
+        "**Riddhi Doshi**, Arpita Waghmare, Sampada Bandre, Lavanya Tiwade, P R Abhishek",
+        "Feature-Based Facial Image Generation Using Deep learning",
+        "12:40 PM to 12:50 PM"
+      ],
+      [
+        "5",
+        "188",
+        "**Monika Chauhan**, Dr. Sagar Patel",
+        "A Comprehensive Review on Explainable Multimodal Deep Learning for Fashion Analytics",
+        "12:50 PM to 01:00 PM"
+      ],
+      [
+        "6",
+        "617",
+        "**Dharmishtha Makwana**, Dr. Hiren Kavathiya",
+        "Comparative Analysis of Standard and Lightweight CNN Architectures for Facial Deepfake Detection",
+        "01:00 PM to 01:10 PM"
+      ],
+      [
+        "Lunch Break"
+      ],
+      [
+        "7",
+        "409",
+        "**Yogesh Kushwah**",
+        "Sliding Mode Control in Autonomous Aerial Vehicles using AI/ML Techniques",
+        "02:10 PM to 02:20 PM"
+      ],
+      [
+        "8",
+        "652",
+        "**Tarjni Vyas**, Dhruvi Patel, Radha Popat, Urvashi Mesariya",
+        "Hour-Ahead PM 2.5 Forecasting Using Histogram-Based Gradient Boosting",
+        "02:20 PM to 02:30 PM"
+      ],
+      [
+        "9",
+        "453",
+        "**Shaktisinh Parmar**, Dr. Mehul Barot",
+        "A Survey of Fuzzy Logic, Feature Selection, and Ensemble Learning Techniques for Aspect-Based Sentiment Analysis",
+        "02:30 PM to 02:40 PM"
+      ]
+    ]
+  },
+  {
+    "paragraphs": [
+      "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities (ICACS 2026)",
+      "Conference Date: November 20, 2026",
+      "Presentation Schedule",
+      "Track 01-C: Artificial Intelligence & Machine Learning",
+      "Session Chair: Dr. Sandip Modha, Assistant Professor, Department of Computer Science and Engineering, Dhirubhai Ambani University (DAU), Gandhinagar",
+      "Time (IST): Slot - I: 12:10 PM – 01:10 PM; Slot - II: 02:10 PM – 03:10 PM",
+      "Microsoft Teams Meeting: https://teams.microsoft.com/meet/494922320557439?p=m7eTpTwFMOK2xqAip1",
+      "Meeting ID: 494 922 320 557 439",
+      "Passcode: 8qT2wg9J",
+      "Session Coordinator: Prof. Tigmanshu Patel"
+    ],
+    "rows": [
+      [
+        "Sr. No.",
+        "Paper ID",
+        "Authors Name",
+        "Paper Title",
+        "Time (IST)"
+      ],
+      [
+        "1",
+        "141",
+        "**Jacobus van Deventer**, Kamogelo Malatsi",
+        "Big data visualization best practices for enhanced data-driven decision-making in organizations.",
+        "12:10 PM to 12:20 PM"
+      ],
+      [
+        "2",
+        "425",
+        "**Sanjay Bhalgama**, Lokesh Gagnani",
+        "Multimodal Graph Neural Network-Based Recommendation Systems: A Systematic Review and Research Directions",
+        "12:20 PM to 12:30 PM"
+      ],
+      [
+        "3",
+        "660",
+        "**Dev Pathak**, Poojan Brahmbhatt, Jayneel Brahmbhatt, Parth Goel",
+        "Semantic Resume Retrieval for Intelligent Recruitment: A Systematic Review",
+        "12:30 PM to 12:40 PM"
+      ],
+      [
+        "4",
+        "596",
+        "**Ani Grigoryan**",
+        "Big Data and Statistical Approaches for Evaluating Digital Government Maturity: Evidence from Global EGDI Indicators",
+        "12:40 PM to 12:50 PM"
+      ],
+      [
+        "5",
+        "363",
+        "**Bhavika Gambhava**, Nikita Desai, Ashish Gor",
+        "Quality Assessment of Machine Translation Systems for Gujarati: Insights from Human and Metric-Based Evaluation",
+        "12:50 PM to 01:00 PM"
+      ],
+      [
+        "6",
+        "693",
+        "**Bhaskar Pandya**, Vinay Patel",
+        "Human–AI Collaboration in Technical Communication: Evidence from a Mixed-Methods Study in Gujarat",
+        "01:00 PM to 01:10 PM"
+      ],
+      [
+        "Lunch Break"
+      ],
+      [
+        "7",
+        "638",
+        "**Drashti Soni**, Jaimin Dave",
+        "Toward Real-Time Streaming Architectures for Scalable Fake News Detection: A Confidence-Gated Tiered Design",
+        "02:10 PM to 02:20 PM"
+      ],
+      [
+        "8",
+        "599",
+        "**Roshan Jathanna**, Sai Adarsh Palla, Prakash K Aithal",
+        "Empirical Evaluation of Short-Term Stock Return Predictability Using Machine Learning and Statistical Analysis",
+        "02:20 PM to 02:30 PM"
+      ],
+      [
+        "9",
+        "600",
+        "**Bela Shrimali**, Sohil Shah, Ashwin Raiyani, Ravij Bharadwaj, Sarthak Joshi, Smit Kadvani",
+        "Implementation and Comparative Analysis of AI-Based Models for Cryptocurrency Price Prediction",
+        "02:30 PM to 02:40 PM"
+      ],
+      [
+        "10",
+        "353",
+        "**Bhailal Limbasiya**, Dr. Lokesh Gagnani",
+        "Explainable Deep Learning Approaches for Early-Stage Alzheimer’s Disease Diagnosis: A Review",
+        "02:40 PM to 02:50 PM"
+      ]
+    ]
+  },
+  {
+    "paragraphs": [
+      "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities (ICACS 2026)",
+      "Conference Date: November 20, 2026",
+      "Presentation Schedule",
+      "Track 02: Communication Technologies",
+      "Session Chair: Prof. (Dr.) Tejas B. Sheth, Head of Department, Electronics & Communication Engineering and Associate Professor, Government Engineering College, Gandhinagar",
+      "Time (IST): Slot - I: 12:10 PM – 01:10 PM; Slot - II: 02:10 PM – 03:10 PM",
+      "Microsoft Teams Meeting:",
+      "https://teams.microsoft.com/meet/457967461589528?p=Tf2JamhZmh5VmIv0O9",
+      "Meeting ID: 457 967 461 589 528",
+      "Passcode: rw3p3bt2",
+      "Session Coordinator: Prof. Kanwar Preet Kaur"
+    ],
+    "rows": [
+      [
+        "Sr. No.",
+        "Paper ID",
+        "Authors Name",
+        "Paper Title",
+        "Time (IST)"
+      ],
+      [
+        "1",
+        "358",
+        "**Amrutha S**, Firdaus Bashir",
+        "E-WOM to Purchase Intention: How Credibility, Trust, Helpfulness and Quality Shape Young Women’s Personal Care Products Purchase Choices Through a Social Influence Theory Lens",
+        "12:10 PM to 12:20 PM"
+      ],
+      [
+        "2",
+        "520",
+        "**Yasir Abdullah R**",
+        "EduBot: A Generative AI-Enabled Educational Platform for Personalized Learning, Automated Assessment, and Real-Time Student Support",
+        "12:20 PM to 12:30 PM"
+      ],
+      [
+        "3",
+        "571",
+        "**Manikandan Chinnusami**, Biyyapu Hari Keerthi, Arunapreethi K.S, Rajesh Anbazhagan, Abirami Karthikeyan, Maheswari Rajnarayanan",
+        "Non-Invasive Point-of-Care Near-Field Microwave Sensor for Early Detection and Monitoring of Dehydration",
+        "12:30 PM to 12:40 PM"
+      ]
+    ]
+  },
+  {
+    "paragraphs": [
+      "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities (ICACS 2026)",
+      "Conference Date: November 20, 2026",
+      "Presentation Schedule",
+      "Track 03: Smart Cities",
+      "Session Chair: Dr. Sushobhan Sen, Assistant Professor, Civil Engineering Department,",
+      "Indian Institute of Technology Gandhinagar",
+      "Time (IST): Slot - I: 12:10 PM – 01:10 PM; Slot - II: 02:10 PM – 03:10 PM",
+      "Microsoft Teams Meeting: https://teams.microsoft.com/meet/466362864481576?p=onGDtkmg40ZUanqppR",
+      "Meeting ID: 466 362 864 481 576",
+      "Passcode: ex2M5VH3",
+      "Session Coordinator: Dr. Akshay Chauhan"
+    ],
+    "rows": [
+      [
+        "Sr. No.",
+        "Paper ID",
+        "Authors Name",
+        "Paper Title",
+        "Time(IST)"
+      ],
+      [
+        "1",
+        "499",
+        "**Rahul More**",
+        "Smart Water Distribution Leakage Detection Using IoT Sensors and Machine Learning",
+        "12:10 PM to 12:20 PM"
+      ],
+      [
+        "2",
+        "179",
+        "**Pratima Shah**, Vishal Gor, Ankit Patel, Jignesh Patel, Nishant Kotiya",
+        "GIS-Integrated AI Model for Predictive Maintenance of Urban Road Infrastructure using Traffic, Weather, and Spatial Data Analytics",
+        "12:20 PM to 12:30 PM"
+      ],
+      [
+        "3",
+        "340",
+        "**Riddhi Doshi**, Kanak Tembhurne, Ashlesha Singh, Parth Jirappure, Rohan Sanjay Misalwar",
+        "A Decoupled Geospatial Decision Support System for Strategic Afforestation in Nagpur",
+        "12:30 PM to 12:40 PM"
+      ],
+      [
+        "4",
+        "503",
+        "**Rahul More**, Pankaj Chandre, Swapnil Patil",
+        "AI-Driven Smart Energy Load Forecasting Using Hybrid LSTM–Transformer Models with Attention-Based Temporal Modeling",
+        "12:40 PM to 12:50 PM"
+      ],
+      [
+        "5",
+        "422",
+        "**Waleed Raza**, Mihirkumar Patel, Menaka Rathnayake, Md Jakirul Islam Jony Prothan, Farzaneh Eslami, Olga Lavrova",
+        "Short Term Wind Power Forecasting Using Deep Learning Models for South Asian Wind Corridor",
+        "12:50 PM to 01:00 PM"
+      ],
+      [
+        "6",
+        "585",
+        "**Amit Choksi**, Vishvjit Thakar, Pratik Vyas",
+        "Machine Learning-assisted Routing Protocol (MLRP) for Energy Efficient Data Dissemination in Urban VANETs for Smart City",
+        "01:00 PM to 01:10 PM"
+      ],
+      [
+        "Lunch Break"
+      ],
+      [
+        "7",
+        "663",
+        "**Dr. Sundaresh Kumarasamy**, Dr. Balaji Karikalan, Dr. Venkatesh S, Dr. Jasmine George",
+        "Artificial Intelligence for Sustainable Smart Cities: An Integrated Framework for Intelligent Decision-Making, Energy Optimization, and Urban Resilience",
+        "02:10 PM to 02:20 PM"
+      ]
+    ]
+  },
+  {
+    "paragraphs": [
+      "International Conference on Artificial Intelligence, Communication Technologies & Smart Cities (ICACS 2026)",
+      "Conference Date: November 20, 2026",
+      "Presentation Schedule",
+      "Track 04: Offline Session (All Tracks)",
+      "Session Coordinator: Dr. Dweepna Garg",
+      "Time (IST): Slot - I: 12:10 PM – 01:10 PM; Slot - II: 02:10 PM – 03:10 PM",
+      "Venue: Room No.: 106, Ground Floor, A6 building (EC/EE/AIML Building), CHARUSAT Campus."
+    ],
+    "rows": [
+      [
+        "Sr. No.",
+        "Paper ID",
+        "Authors Name",
+        "Paper Title",
+        "Time (IST)"
+      ],
+      [
+        "1",
+        "278",
+        "**Nirpex Patel**, Raj Dalwadi, Vijaykumar Panchal, Amit Mehta",
+        "Advanced Sustainable Design of Steel Cavity Shear Walls with Optimized Bolt Distribution: A Comprehensive Parametric Investigation",
+        "12:10 PM to 12:20 PM"
+      ],
+      [
+        "2",
+        "510",
+        "**Bhoomi Bangoria**, Tusharkumar Bangoria",
+        "Explainable Hybrid Machine Learning Framework for Context-Aware Personalized Tourism Destination Recommendation Using User Behavior Analytics",
+        "12:20 PM to 12:30 PM"
+      ],
+      [
+        "3",
+        "582",
+        "**Zarana Gajjar**, Dr. Shahidmohammed Modasiya, Dr. Hiren Mewada",
+        "Comparative Analysis of Deep Learning Architectures for Diabetic Retinopathy Grading Using the APTOS-2019 Dataset",
+        "12:30 PM to 12:40 PM"
+      ],
+      [
+        "4",
+        "640",
+        "**Rupal Kapdi**, Akhilesh Gajjar, Snehal Rajput",
+        "A Multi-Modal Feature Fusion Framework for Skin Cancer Detection Using Concatenated Deep Learning Models",
+        "12:40 PM to 12:50 PM"
+      ],
+      [
+        "5",
+        "586",
+        "**Mredula Pyarelal KP**, Maheshvari Sagar",
+        "A Daubechies wavelet infused ResUNet Architecture for accurate brain tumor segmentation",
+        "12:50 PM to 01:00 PM"
+      ],
+      [
+        "6",
+        "658",
+        "**Chandni Upadhyaya**, Trushit Upadhyaya, Upesh Patel, Arpita Patel, Killol Pandya, Aneri Pandya, Hiren Patel, Merih Palandoken",
+        "Investigation of Radio Waves Exposure on Castor (Ricinus communis)",
+        "01:00 PM to 01:10 PM"
+      ],
+      [
+        "Lunch Break"
+      ],
+      [
+        "7",
+        "513",
+        "**Vaghela Rajdipsinh Dhirubhai**, Kush Daxeshbhai Patel, Komal Arvindbhai Rohit, Rahulkumar Dipakbhai Patel, Vimal Bhatt",
+        "Offline Privacy-Preserving Multi-Modal Biometric Authentication on Edge Devices with Quality Adaptive tri layer Fusion in trust zone",
+        "02:10 PM to 02:20 PM"
+      ]
+    ]
+  }
+]
