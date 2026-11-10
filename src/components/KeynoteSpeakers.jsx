@@ -15,8 +15,7 @@ const keynotes = [
   // },
   {
     session: 1,
-    title:
-      "Advances in Microphone Array Signal Processing",
+    title: "Advances in Microphone Array Signal Processing",
     name: "Prof. Nitin V. George",
     affiliation: "Professor, Indian Institute of Technology Gandhinagar",
     image: "/assets/img/keynote/NitinVGeorge.png",
@@ -32,7 +31,7 @@ const keynotes = [
   {
     session: 3,
     title:
-      "From code to creativity: Rethinking how we can create and compete in the era of GenAI",
+      "Dear AI, Let Me Help You (and Check Your Work): Verifiable Agents for Enterprise Software",
     name: "Dr. Atul Kumar",
     affiliation:
       "Manager and Senior Research Scientist, IBM Research, Bangalore",
