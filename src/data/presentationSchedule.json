@@ -8,12 +8,7 @@
       "(Slot – I: 12:10 PM – 01:10 PM; Slot – II: 02:10 PM – 03:10 PM)"
     ],
     "rows": [
-      [
-        "Track No.",
-        "Track Name",
-        "Mode",
-        "No. of papers"
-      ],
+      ["Track No.", "Track Name", "Mode", "No. of papers"],
       [
         "01-A",
         "Artificial Intelligence & Machine Learning",
@@ -38,22 +33,14 @@
         "Online (Microsoft Teams Meeting)",
         "3"
       ],
-      [
-        "03",
-        "Smart Cities",
-        "Online (Microsoft Teams Meeting)",
-        "7"
-      ],
+      ["03", "Smart Cities", "Online (Microsoft Teams Meeting)", "7"],
       [
         "04",
         "All Tracks",
         "(Offline)\nRoom No.: 106, Ground Floor, A6 building (EC/EE/AIML Building), CHARUSAT Campus",
         "7"
       ],
-      [
-        "Total Number of Papers",
-        "45"
-      ]
+      ["Total Number of Papers", "45"]
     ]
   },
   {
@@ -69,18 +56,12 @@
       "Event Schedule"
     ],
     "rows": [
-      [
-        "Time (IST)",
-        "Event Description"
-      ],
+      ["Time (IST)", "Event Description"],
       [
         "10:30 AM – 10:45 AM",
         "Inaugural Ceremony\nSession Coordinator: Prof. Nishat Shaikh\nMicrosoft Teams Meeting:\nhttps://teams.microsoft.com/meet/472092524243628?p=4uSB1hAUUNxep76dbI\nMeeting ID: 472 092 524 243 628\nPasscode: Sv7wu6n8"
       ],
-      [
-        "11:00 AM – 11:40 AM",
-        "Keynote Speeches (Three Parallel Sessions)"
-      ],
+      ["11:00 AM – 11:40 AM", "Keynote Speeches (Three Parallel Sessions)"],
       [
         "11:00 AM – 11:40 AM",
         "Track 1: Dr. Atul Kumar, IBM Research, Bengaluru\nTopic: Dear AI, Let Me Help You (and Check Your Work): Verifiable Agents for Enterprise Software\nSession Coordinator: Prof. Nishat Shaikh\nMicrosoft Teams Meeting:\nhttps://teams.microsoft.com/meet/439379391687834?p=xIIM01KMFC7nuv1sS6\nMeeting ID: 439 379 391 687 834\nPasscode: qz2NV2EE"
@@ -93,18 +74,12 @@
         "11:00 AM – 11:40 AM",
         "Track 3: Dr. Mohammad Shafi Mir, NIT Srinagar\nTopic: Intelligent Transportation Systems in Smart Cities\nSession Coordinator: Prof. Kanwar Preet Kaur\nMicrosoft Teams Meeting:\nhttps://teams.microsoft.com/meet/430274943108521?p=cZ2JVnhmJSGzl6ZzzT\nMeeting ID: 430 274 943 108 521\nPasscode: P3Z9RF6g"
       ],
-      [
-        "11:40 AM – 12:10 PM",
-        "Short Break"
-      ],
+      ["11:40 AM – 12:10 PM", "Short Break"],
       [
         "12:10 PM – 01:10 PM",
         "Slot - I: Tracks 01-A, 01-B, 01-C, 02, 03 (Online) and Track 04 (Offline)"
       ],
-      [
-        "01:10 PM – 02:10 PM",
-        "Lunch Break"
-      ],
+      ["01:10 PM – 02:10 PM", "Lunch Break"],
       [
         "02:10 PM – 03:10 PM",
         "Slot - II: Tracks 01-A, 01-B, 01-C, 02, 03 (Online) and Track 04 (Offline)"
@@ -129,13 +104,7 @@
       "Session Coordinator: Prof. Dipak Ramoliya"
     ],
     "rows": [
-      [
-        "Sr. No.",
-        "Paper ID",
-        "Authors Name",
-        "Paper Title",
-        "Time (IST)"
-      ],
+      ["Sr. No.", "Paper ID", "Authors Name", "Paper Title", "Time (IST)"],
       [
         "1",
         "219",
@@ -178,9 +147,7 @@
         "Deep Learning-Based Automated Detection of Early Zoonotic Risk Using Wildlife Surveillance Video Analytics",
         "01:00 PM to 01:10 PM"
       ],
-      [
-        "Lunch Break"
-      ],
+      ["Lunch Break"],
       [
         "7",
         "155",
@@ -218,17 +185,11 @@
       "Session Coordinator: Dr. Mihir Mehta"
     ],
     "rows": [
-      [
-        "Sr. No.",
-        "Paper ID",
-        "Authors Name",
-        "Paper Title",
-        "Time (IST)"
-      ],
+      ["Sr. No.", "Paper ID", "Authors Name", "Paper Title", "Time (IST)"],
       [
         "1",
         "338",
-        "**Boopathy S**, Ramkumar Natarajan, B Nagasirisha, Y Mamillu, B Vamsy Krishna, S Kokilamani",
+        "**Boopathy S.**, Ramkumar Natarajan,  Sowmiya K., Mahatisri A., D Sindhu, Kovarthanaselvi R. S.",
         "Metal Surface Defect Classification Using YOLOv8",
         "12:10 PM to 12:20 PM"
       ],
@@ -267,9 +228,7 @@
         "Comparative Analysis of Standard and Lightweight CNN Architectures for Facial Deepfake Detection",
         "01:00 PM to 01:10 PM"
       ],
-      [
-        "Lunch Break"
-      ],
+      ["Lunch Break"],
       [
         "7",
         "409",
@@ -307,13 +266,7 @@
       "Session Coordinator: Prof. Tigmanshu Patel"
     ],
     "rows": [
-      [
-        "Sr. No.",
-        "Paper ID",
-        "Authors Name",
-        "Paper Title",
-        "Time (IST)"
-      ],
+      ["Sr. No.", "Paper ID", "Authors Name", "Paper Title", "Time (IST)"],
       [
         "1",
         "141",
@@ -356,9 +309,7 @@
         "Human–AI Collaboration in Technical Communication: Evidence from a Mixed-Methods Study in Gujarat",
         "01:00 PM to 01:10 PM"
       ],
-      [
-        "Lunch Break"
-      ],
+      ["Lunch Break"],
       [
         "7",
         "638",
@@ -404,13 +355,7 @@
       "Session Coordinator: Prof. Kanwar Preet Kaur"
     ],
     "rows": [
-      [
-        "Sr. No.",
-        "Paper ID",
-        "Authors Name",
-        "Paper Title",
-        "Time (IST)"
-      ],
+      ["Sr. No.", "Paper ID", "Authors Name", "Paper Title", "Time (IST)"],
       [
         "1",
         "358",
@@ -449,13 +394,7 @@
       "Session Coordinator: Dr. Akshay Chauhan"
     ],
     "rows": [
-      [
-        "Sr. No.",
-        "Paper ID",
-        "Authors Name",
-        "Paper Title",
-        "Time(IST)"
-      ],
+      ["Sr. No.", "Paper ID", "Authors Name", "Paper Title", "Time(IST)"],
       [
         "1",
         "499",
@@ -498,9 +437,7 @@
         "Machine Learning-assisted Routing Protocol (MLRP) for Energy Efficient Data Dissemination in Urban VANETs for Smart City",
         "01:00 PM to 01:10 PM"
       ],
-      [
-        "Lunch Break"
-      ],
+      ["Lunch Break"],
       [
         "7",
         "663",
@@ -521,13 +458,7 @@
       "Venue: Room No.: 106, Ground Floor, A6 building (EC/EE/AIML Building), CHARUSAT Campus."
     ],
     "rows": [
-      [
-        "Sr. No.",
-        "Paper ID",
-        "Authors Name",
-        "Paper Title",
-        "Time (IST)"
-      ],
+      ["Sr. No.", "Paper ID", "Authors Name", "Paper Title", "Time (IST)"],
       [
         "1",
         "278",
@@ -570,9 +501,7 @@
         "Investigation of Radio Waves Exposure on Castor (Ricinus communis)",
         "01:00 PM to 01:10 PM"
       ],
-      [
-        "Lunch Break"
-      ],
+      ["Lunch Break"],
       [
         "7",
         "513",
