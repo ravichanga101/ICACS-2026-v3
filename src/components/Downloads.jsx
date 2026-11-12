@@ -135,14 +135,14 @@ const Downloads = () => {
           size: "0.5 MB",
           description: "Copyright form for Springer publication",
         },
-        {
-          id: 7,
-          name: "Springer Word Template",
-          file: "/assets/files/Springer_Word_Template.zip",
-          type: "ZIP",
-          size: "1.8 MB",
-          description: "Springer template for word processors",
-        },
+        // {
+        //   id: 7,
+        //   name: "Springer Word Template",
+        //   file: "/assets/files/Springer_Word_Template.zip",
+        //   type: "ZIP",
+        //   size: "1.8 MB",
+        //   description: "Springer template for word processors",
+        // },
       ],
     },
     {
@@ -174,14 +174,14 @@ const Downloads = () => {
           size: "5.1 MB",
           description: "Template for conference presentations",
         },
-        {
-          id: 4,
-          name: "Alternative PowerPoint Template",
-          file: "/assets/files/Template.pptx",
-          type: "PPTX",
-          size: "3.8 MB",
-          description: "Alternative presentation template",
-        },
+        // {
+        //   id: 4,
+        //   name: "Alternative PowerPoint Template",
+        //   file: "/assets/files/Template.pptx",
+        //   type: "PPTX",
+        //   size: "3.8 MB",
+        //   description: "Alternative presentation template",
+        // },
       ],
     },
   ];
@@ -266,14 +266,14 @@ const Downloads = () => {
                   </div>
                 </div>
                 <div className="mt-auto pt-5">
-                    <button
-                      type="button"
-                      onClick={() => setSelectedSchedule(schedule)}
-                      className="mt-4 inline-flex items-center gap-2 rounded-md bg-[#1869b4] px-4 py-2 font-medium text-white transition hover:bg-blue-800"
-                    >
-                      <Eye className="h-4 w-4" aria-hidden="true" />
-                      View schedule
-                    </button>
+                  <button
+                    type="button"
+                    onClick={() => setSelectedSchedule(schedule)}
+                    className="mt-4 inline-flex items-center gap-2 rounded-md bg-[#1869b4] px-4 py-2 font-medium text-white transition hover:bg-blue-800"
+                  >
+                    <Eye className="h-4 w-4" aria-hidden="true" />
+                    View schedule
+                  </button>
                 </div>
               </article>
             ))}
@@ -349,126 +349,133 @@ const Downloads = () => {
                         <PresentationSchedule />
                       ) : (
                         <>
-                      <h4 className="mb-4 text-xl font-bold text-gray-900">
-                        {selectedSchedule.id === "keynotes"
-                          ? "Keynote Speech Schedule"
-                          : "Conference Program"}
-                      </h4>
-                      {selectedSchedule.id === "keynotes" && (
-                        <ul className="space-y-4 lg:hidden">
-                          {keynoteProgram.map((item) => (
-                            <li
-                              key={item.speaker}
-                              className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm sm:p-5"
-                            >
-                              <p className="text-sm font-semibold text-[#1869b4]">
-                                {item.time} (IST)
-                              </p>
-                              <h5 className="mt-2 text-lg font-bold text-gray-900">
-                                {item.speaker}
-                              </h5>
-                              <p className="mt-1 text-sm text-gray-600">
-                                {item.affiliation.join(" · ")}
-                              </p>
-                              <p className="mt-4 text-sm font-semibold uppercase tracking-wide text-gray-500">
-                                Speech Topic
-                              </p>
-                              <p className="mt-1 text-gray-800">{item.topic}</p>
-                              <span className="mt-4 inline-block rounded-full bg-orange-50 px-3 py-1 text-sm font-medium text-[#c45b00]">
-                                {item.track}
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-
-                      <div
-                        className={`overflow-x-auto rounded-lg border border-gray-200 ${
-                          selectedSchedule.id === "keynotes"
-                            ? "hidden lg:block"
-                            : ""
-                        }`}
-                      >
-                        <table className="w-full border-collapse text-left">
-                          <thead className="bg-[#1869b4] text-white">
-                            <tr>
-                              <th
-                                scope="col"
-                                className="whitespace-nowrap px-4 py-3 font-semibold sm:px-6"
-                              >
-                                {selectedSchedule.id === "keynotes"
-                                  ? "Time"
-                                  : "Time (IST)"}
-                              </th>
-                              {selectedSchedule.id === "keynotes" && (
-                                <>
-                                  <th
-                                    scope="col"
-                                    className="min-w-[220px] px-4 py-3 font-semibold sm:px-6"
-                                  >
-                                    Keynote Speaker
-                                  </th>
-                                  <th
-                                    scope="col"
-                                    className="min-w-[280px] px-4 py-3 font-semibold sm:px-6"
-                                  >
+                          <h4 className="mb-4 text-xl font-bold text-gray-900">
+                            {selectedSchedule.id === "keynotes"
+                              ? "Keynote Speech Schedule"
+                              : "Conference Program"}
+                          </h4>
+                          {selectedSchedule.id === "keynotes" && (
+                            <ul className="space-y-4 lg:hidden">
+                              {keynoteProgram.map((item) => (
+                                <li
+                                  key={item.speaker}
+                                  className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm sm:p-5"
+                                >
+                                  <p className="text-sm font-semibold text-[#1869b4]">
+                                    {item.time} (IST)
+                                  </p>
+                                  <h5 className="mt-2 text-lg font-bold text-gray-900">
+                                    {item.speaker}
+                                  </h5>
+                                  <p className="mt-1 text-sm text-gray-600">
+                                    {item.affiliation.join(" · ")}
+                                  </p>
+                                  <p className="mt-4 text-sm font-semibold uppercase tracking-wide text-gray-500">
                                     Speech Topic
+                                  </p>
+                                  <p className="mt-1 text-gray-800">
+                                    {item.topic}
+                                  </p>
+                                  <span className="mt-4 inline-block rounded-full bg-orange-50 px-3 py-1 text-sm font-medium text-[#c45b00]">
+                                    {item.track}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+
+                          <div
+                            className={`overflow-x-auto rounded-lg border border-gray-200 ${
+                              selectedSchedule.id === "keynotes"
+                                ? "hidden lg:block"
+                                : ""
+                            }`}
+                          >
+                            <table className="w-full border-collapse text-left">
+                              <thead className="bg-[#1869b4] text-white">
+                                <tr>
+                                  <th
+                                    scope="col"
+                                    className="whitespace-nowrap px-4 py-3 font-semibold sm:px-6"
+                                  >
+                                    {selectedSchedule.id === "keynotes"
+                                      ? "Time"
+                                      : "Time (IST)"}
                                   </th>
-                                </>
-                              )}
-                              <th
-                                scope="col"
-                                className="px-4 py-3 font-semibold sm:px-6"
-                              >
-                                {selectedSchedule.id === "keynotes"
-                                  ? "Track"
-                                  : "Description"}
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {(selectedSchedule.id === "keynotes"
-                              ? keynoteProgram
-                              : conferenceProgram
-                            ).map((item, index) => (
-                              <tr
-                                key={`${item.time}-${index}`}
-                                className={
-                                  index % 2 === 0 ? "bg-white" : "bg-gray-50"
-                                }
-                              >
-                                <td className="whitespace-nowrap border-t border-gray-200 px-4 py-4 font-semibold text-[#1869b4] sm:px-6">
-                                  {item.time}
-                                </td>
-                                {selectedSchedule.id === "keynotes" && (
-                                  <>
-                                    <td className="border-t border-gray-200 px-4 py-4 text-gray-800 sm:px-6">
-                                      <p className="font-semibold">
-                                        {item.speaker}
-                                      </p>
-                                      <p className="mt-1 text-sm text-gray-600">
-                                        {item.affiliation.map((line) => (
-                                          <span key={line} className="block">
-                                            {line}
-                                          </span>
-                                        ))}
-                                      </p>
+                                  {selectedSchedule.id === "keynotes" && (
+                                    <>
+                                      <th
+                                        scope="col"
+                                        className="min-w-[220px] px-4 py-3 font-semibold sm:px-6"
+                                      >
+                                        Keynote Speaker
+                                      </th>
+                                      <th
+                                        scope="col"
+                                        className="min-w-[280px] px-4 py-3 font-semibold sm:px-6"
+                                      >
+                                        Speech Topic
+                                      </th>
+                                    </>
+                                  )}
+                                  <th
+                                    scope="col"
+                                    className="px-4 py-3 font-semibold sm:px-6"
+                                  >
+                                    {selectedSchedule.id === "keynotes"
+                                      ? "Track"
+                                      : "Description"}
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {(selectedSchedule.id === "keynotes"
+                                  ? keynoteProgram
+                                  : conferenceProgram
+                                ).map((item, index) => (
+                                  <tr
+                                    key={`${item.time}-${index}`}
+                                    className={
+                                      index % 2 === 0
+                                        ? "bg-white"
+                                        : "bg-gray-50"
+                                    }
+                                  >
+                                    <td className="whitespace-nowrap border-t border-gray-200 px-4 py-4 font-semibold text-[#1869b4] sm:px-6">
+                                      {item.time}
                                     </td>
+                                    {selectedSchedule.id === "keynotes" && (
+                                      <>
+                                        <td className="border-t border-gray-200 px-4 py-4 text-gray-800 sm:px-6">
+                                          <p className="font-semibold">
+                                            {item.speaker}
+                                          </p>
+                                          <p className="mt-1 text-sm text-gray-600">
+                                            {item.affiliation.map((line) => (
+                                              <span
+                                                key={line}
+                                                className="block"
+                                              >
+                                                {line}
+                                              </span>
+                                            ))}
+                                          </p>
+                                        </td>
+                                        <td className="border-t border-gray-200 px-4 py-4 text-gray-700 sm:px-6">
+                                          {item.topic}
+                                        </td>
+                                      </>
+                                    )}
                                     <td className="border-t border-gray-200 px-4 py-4 text-gray-700 sm:px-6">
-                                      {item.topic}
+                                      {selectedSchedule.id === "keynotes"
+                                        ? item.track
+                                        : item.description}
                                     </td>
-                                  </>
-                                )}
-                                <td className="border-t border-gray-200 px-4 py-4 text-gray-700 sm:px-6">
-                                  {selectedSchedule.id === "keynotes"
-                                    ? item.track
-                                    : item.description}
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
                         </>
                       )}
                     </div>
@@ -482,7 +489,7 @@ const Downloads = () => {
                 </div>
               </div>
             </div>,
-            document.body
+            document.body,
           )}
 
         {/* Download Categories */}
