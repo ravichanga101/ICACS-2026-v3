@@ -30,7 +30,7 @@ export default function ScheduleHighlight() {
           </div>
         </div>
         <Link
-          href="/downloads#schedules"
+          href="/schedules"
           className="inline-flex flex-shrink-0 items-center gap-2 rounded-md bg-white px-5 py-3 font-semibold text-[#1869b4] transition hover:bg-orange-100"
         >
           View schedules

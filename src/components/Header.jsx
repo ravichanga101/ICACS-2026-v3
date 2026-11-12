@@ -159,8 +159,8 @@ export default function Header() {
             Speakers
           </Link>
           <Link
-            href="/downloads#schedules"
-            className="text-[#fd7e14] hover:text-orange-700 font-semibold px-3 py-2 rounded-md bg-orange-50 transition"
+            href="/schedules"
+            className="schedule-running-border schedule-running-border--light text-[#fd7e14] hover:text-orange-700 font-semibold px-3 py-2 rounded-md transition"
           >
             Schedule
           </Link>
@@ -276,8 +276,8 @@ export default function Header() {
                 Keynote Speakers
               </Link>
               <Link
-                href="/downloads#schedules"
-                className="py-2 font-semibold text-[#fd7e14] border-b border-gray-100"
+                href="/schedules"
+                className="schedule-running-border schedule-running-border--light py-2 px-3 font-semibold text-[#fd7e14] border-b border-gray-100"
                 onClick={handleMobileLinkClick}
               >
                 Schedule

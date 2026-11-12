@@ -73,6 +73,68 @@ body {
   animation: blink 1.4s ease-in-out infinite;
 }
 
+/* Running (rotating) border for the Schedule highlight links */
+@keyframes schedule-border-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.schedule-running-border {
+  --sr-bg: #0f766e;
+  --sr-bg-hover: #115e59;
+  --sr-glow: #fd7e14;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 0.375rem;
+}
+
+.schedule-running-border::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 260px;
+  height: 260px;
+  margin: -130px 0 0 -130px;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg 250deg,
+    var(--sr-glow) 300deg,
+    #ffffff 340deg,
+    transparent 360deg
+  );
+  animation: schedule-border-spin 2.5s linear infinite;
+  z-index: -2;
+}
+
+.schedule-running-border::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: inherit;
+  background: var(--sr-bg);
+  z-index: -1;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-running-border:hover::after {
+  background: var(--sr-bg-hover);
+}
+
+.schedule-running-border--light {
+  --sr-bg: #fff7ed;
+  --sr-bg-hover: #ffedd5;
+  --sr-glow: #fd7e14;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .schedule-running-border::before {
+    animation: none;
+  }
+}
+
 /* Superscript styling for dates */
 sup {
   font-size: 0.75em;

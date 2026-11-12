@@ -76,8 +76,8 @@ export default function Hero() {
               </a> */}
               <AcceptedPapersModal />
               <Link
-                href="/downloads#schedules"
-                className="inline-flex items-center gap-2 rounded-md bg-[#0f766e] px-5 py-2 font-medium text-white text-sm shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#115e59] hover:shadow-lg md:px-6 md:text-base"
+                href="/schedules"
+                className="schedule-running-border inline-flex items-center gap-2 px-5 py-2 font-medium text-white text-sm shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:px-6 md:text-base"
               >
                 <CalendarDays className="h-4 w-4" aria-hidden="true" />
                 Schedules
