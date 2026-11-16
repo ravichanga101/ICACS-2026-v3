@@ -1,5 +1,12 @@
 import Image from "next/image";
-import { ArrowDown, CalendarDays, Clock3, MapPin, UserRound, Video } from "lucide-react";
+import {
+  ArrowDown,
+  CalendarDays,
+  Clock3,
+  MapPin,
+  UserRound,
+  Video,
+} from "lucide-react";
 import schedule from "../data/presentationSchedule.json";
 
 // Presenting author photos, cropped to square thumbnails via scripts/process-author-photos.js
@@ -50,6 +57,8 @@ const presenterPhotos = {
   513: "/assets/img/authors-photo/optimized/paper-513.jpg",
 
   512: "/assets/img/authors-photo/optimized/paper-512.jpg",
+
+  652: "/assets/img/authors-photo/optimized/paper-652.jpg",
 };
 
 function ScheduleText({ text }) {
@@ -66,7 +75,7 @@ function ScheduleText({ text }) {
       </a>
     ) : (
       part
-    )
+    ),
   );
 }
 
@@ -79,7 +88,7 @@ function AuthorsText({ text }) {
       </strong>
     ) : (
       part
-    )
+    ),
   );
 }
 
@@ -95,7 +104,9 @@ const trackColors = {
 
 function getTrackDetails(paragraphs) {
   return paragraphs.slice(4).reduce((details, paragraph) => {
-    const match = paragraph.match(/^(Session Chair|Session Coordinator|Time \(IST\)|Microsoft Teams Meeting|Meeting ID|Passcode|Venue):\s*(.*)$/);
+    const match = paragraph.match(
+      /^(Session Chair|Session Coordinator|Time \(IST\)|Microsoft Teams Meeting|Meeting ID|Passcode|Venue):\s*(.*)$/,
+    );
     if (match) {
       details.push({ label: match[1], value: match[2] });
     } else if (details.length) {
@@ -113,47 +124,95 @@ export default function PresentationSchedule() {
     <div className="space-y-8 sm:space-y-10">
       <section aria-labelledby="presentation-overview">
         <div>
-          <p className="text-xs font-bold uppercase tracking-widest text-[#c45b00]">Plan your day</p>
-          <h4 id="presentation-overview" className="mt-1 text-2xl font-bold text-gray-900 sm:text-3xl">
+          <p className="text-xs font-bold uppercase tracking-widest text-[#c45b00]">
+            Plan your day
+          </p>
+          <h4
+            id="presentation-overview"
+            className="mt-1 text-2xl font-bold text-gray-900 sm:text-3xl"
+          >
             Presentation schedule at a glance
           </h4>
-          <p className="mt-2 text-sm text-gray-600">Six parallel sessions · All times in Indian Standard Time (IST)</p>
+          <p className="mt-2 text-sm text-gray-600">
+            Six parallel sessions · All times in Indian Standard Time (IST)
+          </p>
         </div>
 
         <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col justify-between rounded-xl bg-[#1869b4] p-4 text-white shadow-sm">
-            <p className="text-xs font-bold uppercase tracking-wide text-blue-100">{overview.rows.at(-1)[0]}</p>
-            <p className="mt-2 text-3xl font-bold leading-none">{overview.rows.at(-1)[1]}</p>
+            <p className="text-xs font-bold uppercase tracking-wide text-blue-100">
+              {overview.rows.at(-1)[0]}
+            </p>
+            <p className="mt-2 text-3xl font-bold leading-none">
+              {overview.rows.at(-1)[1]}
+            </p>
           </div>
           {events.paragraphs.slice(2, 5).map((slot) => {
             const [label, time] = slot.split(": ");
             return (
-              <div key={slot} className="flex flex-col justify-between rounded-xl border border-blue-100 bg-blue-50/60 p-4">
+              <div
+                key={slot}
+                className="flex flex-col justify-between rounded-xl border border-blue-100 bg-blue-50/60 p-4"
+              >
                 <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-[#1869b4]">
-                  <Clock3 size={16} className="shrink-0" aria-hidden="true" /> {label.replace(/\s+/g, " ")}
+                  <Clock3 size={16} className="shrink-0" aria-hidden="true" />{" "}
+                  {label.replace(/\s+/g, " ")}
                 </p>
-                <p className="mt-2 text-base font-bold leading-snug text-gray-900">{time}</p>
+                <p className="mt-2 text-base font-bold leading-snug text-gray-900">
+                  {time}
+                </p>
               </div>
             );
           })}
         </div>
-        <p className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-4 text-sm leading-relaxed text-gray-700">{events.paragraphs[0]}</p>
+        <p className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-4 text-sm leading-relaxed text-gray-700">
+          {events.paragraphs[0]}
+        </p>
       </section>
 
       <section aria-labelledby="track-navigation-title">
-        <p className="text-xs font-bold uppercase tracking-widest text-[#c45b00]">Find your session</p>
-        <h4 id="track-navigation-title" className="mt-1 text-2xl font-bold text-gray-900">Choose a track</h4>
-        <p className="mt-2 text-sm text-gray-600">Select a track to see its session information and paper presentations.</p>
-        <nav aria-label="Presentation tracks" className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <p className="text-xs font-bold uppercase tracking-widest text-[#c45b00]">
+          Find your session
+        </p>
+        <h4
+          id="track-navigation-title"
+          className="mt-1 text-2xl font-bold text-gray-900"
+        >
+          Choose a track
+        </h4>
+        <p className="mt-2 text-sm text-gray-600">
+          Select a track to see its session information and paper presentations.
+        </p>
+        <nav
+          aria-label="Presentation tracks"
+          className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"
+        >
           {overview.rows.slice(1, -1).map(([number, name, mode, count]) => (
-            <a key={number} href={`#presentation-track-${number}`} className="group rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-[#1869b4] hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1869b4]">
+            <a
+              key={number}
+              href={`#presentation-track-${number}`}
+              className="group rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-[#1869b4] hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1869b4]"
+            >
               <div className="flex items-center justify-between gap-2">
-                <span className={`rounded-full px-3 py-1 text-xs font-bold text-white ${trackColors[number] ?? "bg-[#1869b4]"}`}>Track {number}</span>
-                <ArrowDown className="h-4 w-4 text-[#1869b4] transition group-hover:translate-y-1" aria-hidden="true" />
+                <span
+                  className={`rounded-full px-3 py-1 text-xs font-bold text-white ${trackColors[number] ?? "bg-[#1869b4]"}`}
+                >
+                  Track {number}
+                </span>
+                <ArrowDown
+                  className="h-4 w-4 text-[#1869b4] transition group-hover:translate-y-1"
+                  aria-hidden="true"
+                />
               </div>
-              <p className="mt-3 font-bold leading-snug text-gray-900">{name}</p>
+              <p className="mt-3 font-bold leading-snug text-gray-900">
+                {name}
+              </p>
               <p className="mt-2 flex items-center gap-1.5 text-sm text-gray-600">
-                {number === "04" ? <MapPin size={15} aria-hidden="true" /> : <Video size={15} aria-hidden="true" />}
+                {number === "04" ? (
+                  <MapPin size={15} aria-hidden="true" />
+                ) : (
+                  <Video size={15} aria-hidden="true" />
+                )}
                 {number === "04" ? "Offline" : "Online"} · {count} papers
               </p>
               <span className="sr-only">{mode}</span>
@@ -169,30 +228,68 @@ export default function PresentationSchedule() {
         const details = getTrackDetails(track.paragraphs);
         const breakIndex = track.rows.findIndex((row) => row.length === 1);
         const slots = [
-          { label: "Slot I", rows: track.rows.slice(1, breakIndex === -1 ? undefined : breakIndex) },
-          ...(breakIndex === -1 ? [] : [{ label: "Slot II", rows: track.rows.slice(breakIndex + 1) }]),
+          {
+            label: "Slot I",
+            rows: track.rows.slice(
+              1,
+              breakIndex === -1 ? undefined : breakIndex,
+            ),
+          },
+          ...(breakIndex === -1
+            ? []
+            : [{ label: "Slot II", rows: track.rows.slice(breakIndex + 1) }]),
         ];
 
         return (
-          <section key={number} id={`presentation-track-${number}`} aria-labelledby={`presentation-track-title-${number}`} className="scroll-mt-4 overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
-            <header className={`${trackColors[number] ?? "bg-[#1869b4]"} px-5 py-5 text-white sm:px-6`}>
-              <p className="text-xs font-bold uppercase tracking-widest text-blue-100">{trackLabel} · {number === "04" ? "Offline" : "Online"}</p>
-              <h4 id={`presentation-track-title-${number}`} className="mt-1 text-xl font-bold sm:text-2xl">{name}</h4>
+          <section
+            key={number}
+            id={`presentation-track-${number}`}
+            aria-labelledby={`presentation-track-title-${number}`}
+            className="scroll-mt-4 overflow-hidden rounded-2xl border border-gray-200 shadow-sm"
+          >
+            <header
+              className={`${trackColors[number] ?? "bg-[#1869b4]"} px-5 py-5 text-white sm:px-6`}
+            >
+              <p className="text-xs font-bold uppercase tracking-widest text-blue-100">
+                {trackLabel} · {number === "04" ? "Offline" : "Online"}
+              </p>
+              <h4
+                id={`presentation-track-title-${number}`}
+                className="mt-1 text-xl font-bold sm:text-2xl"
+              >
+                {name}
+              </h4>
             </header>
             <div className="p-4 sm:p-6">
-              <h5 className="text-sm font-bold uppercase tracking-wide text-[#1869b4]">Session information</h5>
+              <h5 className="text-sm font-bold uppercase tracking-wide text-[#1869b4]">
+                Session information
+              </h5>
               <dl className="mt-3 grid gap-3 rounded-xl bg-gray-50 p-4 sm:grid-cols-2">
                 {details.map(({ label, value }) => (
-                  <div key={label} className={label === "Session Chair" || label === "Venue" || label === "Microsoft Teams Meeting" ? "sm:col-span-2" : ""}>
-                    <dt className="text-xs font-bold uppercase tracking-wide text-gray-500">{label}</dt>
-                    <dd className="mt-1 text-sm leading-relaxed text-gray-800"><ScheduleText text={value} /></dd>
+                  <div
+                    key={label}
+                    className={
+                      label === "Session Chair" ||
+                      label === "Venue" ||
+                      label === "Microsoft Teams Meeting"
+                        ? "sm:col-span-2"
+                        : ""
+                    }
+                  >
+                    <dt className="text-xs font-bold uppercase tracking-wide text-gray-500">
+                      {label}
+                    </dt>
+                    <dd className="mt-1 text-sm leading-relaxed text-gray-800">
+                      <ScheduleText text={value} />
+                    </dd>
                   </div>
                 ))}
               </dl>
               <h5 className="mt-6 flex flex-wrap items-center gap-2 text-lg font-bold text-gray-900">
                 Paper presentations
                 <span className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-semibold normal-case text-gray-600">
-                  <strong className="font-bold text-gray-900">Bold</strong> name = presenting author
+                  <strong className="font-bold text-gray-900">Bold</strong> name
+                  = presenting author
                 </span>
               </h5>
               {slots.map((slot, slotIndex) => (
@@ -206,34 +303,58 @@ export default function PresentationSchedule() {
                     <CalendarDays size={16} aria-hidden="true" /> {slot.label}
                   </h6>
                   <ul className="grid gap-3 lg:grid-cols-2">
-                    {slot.rows.map(([serial, paperId, authors, title, time]) => {
-                      const photo = presenterPhotos[paperId];
-                      return (
-                        <li key={paperId} className="min-w-0 rounded-xl border border-gray-200 bg-white p-4">
-                          <div className="flex flex-wrap items-center justify-between gap-2">
-                            <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-[#1869b4]">{time} IST</span>
-                            <span className="text-xs font-bold text-[#9a4700]">#{serial} · Paper ID {paperId}</span>
-                          </div>
-                          <p className="mt-4 text-xs font-bold uppercase tracking-wide text-gray-500">Paper title</p>
-                          <p className="mt-1 font-bold leading-snug text-gray-900">{title}</p>
-                          <div className="mt-4 flex items-start gap-3 border-t border-gray-100 pt-4">
-                            <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border border-blue-100 bg-blue-50 text-[#1869b4]">
-                              {photo ? (
-                                <Image src={photo} alt={`Presenter for paper ${paperId}`} width={64} height={64} className="h-full w-full object-cover" />
-                              ) : (
-                                <UserRound size={32} aria-label="Presenter photo placeholder" />
-                              )}
+                    {slot.rows.map(
+                      ([serial, paperId, authors, title, time]) => {
+                        const photo = presenterPhotos[paperId];
+                        return (
+                          <li
+                            key={paperId}
+                            className="min-w-0 rounded-xl border border-gray-200 bg-white p-4"
+                          >
+                            <div className="flex flex-wrap items-center justify-between gap-2">
+                              <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-[#1869b4]">
+                                {time} IST
+                              </span>
+                              <span className="text-xs font-bold text-[#9a4700]">
+                                #{serial} · Paper ID {paperId}
+                              </span>
                             </div>
-                            <div className="min-w-0">
-                              <p className="text-xs font-bold uppercase tracking-wide text-gray-500">Authors</p>
-                              <p className="mt-1 text-sm leading-relaxed text-gray-700">
-                                <AuthorsText text={authors} />
-                              </p>
+                            <p className="mt-4 text-xs font-bold uppercase tracking-wide text-gray-500">
+                              Paper title
+                            </p>
+                            <p className="mt-1 font-bold leading-snug text-gray-900">
+                              {title}
+                            </p>
+                            <div className="mt-4 flex items-start gap-3 border-t border-gray-100 pt-4">
+                              <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border border-blue-100 bg-blue-50 text-[#1869b4]">
+                                {photo ? (
+                                  <Image
+                                    src={photo}
+                                    alt={`Presenter for paper ${paperId}`}
+                                    width={64}
+                                    height={64}
+                                    className="h-full w-full object-cover"
+                                  />
+                                ) : (
+                                  <UserRound
+                                    size={32}
+                                    aria-label="Presenter photo placeholder"
+                                  />
+                                )}
+                              </div>
+                              <div className="min-w-0">
+                                <p className="text-xs font-bold uppercase tracking-wide text-gray-500">
+                                  Authors
+                                </p>
+                                <p className="mt-1 text-sm leading-relaxed text-gray-700">
+                                  <AuthorsText text={authors} />
+                                </p>
+                              </div>
                             </div>
-                          </div>
-                        </li>
-                      );
-                    })}
+                          </li>
+                        );
+                      },
+                    )}
                   </ul>
                 </div>
               ))}
@@ -243,12 +364,19 @@ export default function PresentationSchedule() {
       })}
 
       <details className="rounded-xl border border-gray-200 bg-gray-50">
-        <summary className="cursor-pointer p-4 font-bold text-gray-900">Full event schedule and meeting details</summary>
+        <summary className="cursor-pointer p-4 font-bold text-gray-900">
+          Full event schedule and meeting details
+        </summary>
         <ul className="space-y-3 px-4 pb-4">
           {events.rows.slice(1).map(([time, description], index) => (
-            <li key={`${time}-${index}`} className="rounded-lg bg-white p-4 text-sm">
+            <li
+              key={`${time}-${index}`}
+              className="rounded-lg bg-white p-4 text-sm"
+            >
               <p className="font-bold text-[#1869b4]">{time} (IST)</p>
-              <p className="mt-1 whitespace-pre-line leading-relaxed text-gray-700"><ScheduleText text={description} /></p>
+              <p className="mt-1 whitespace-pre-line leading-relaxed text-gray-700">
+                <ScheduleText text={description} />
+              </p>
             </li>
           ))}
         </ul>
