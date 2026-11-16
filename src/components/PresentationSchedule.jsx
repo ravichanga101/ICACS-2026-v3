@@ -83,6 +83,16 @@ function AuthorsText({ text }) {
   );
 }
 
+// Full class names so Tailwind can detect them.
+const trackColors = {
+  "01-A": "bg-[#1869b4]",
+  "01-B": "bg-indigo-600",
+  "01-C": "bg-rose-600",
+  "02": "bg-teal-600",
+  "03": "bg-purple-700",
+  "04": "bg-orange-600",
+};
+
 function getTrackDetails(paragraphs) {
   return paragraphs.slice(4).reduce((details, paragraph) => {
     const match = paragraph.match(/^(Session Chair|Session Coordinator|Time \(IST\)|Microsoft Teams Meeting|Meeting ID|Passcode|Venue):\s*(.*)$/);
@@ -138,7 +148,7 @@ export default function PresentationSchedule() {
           {overview.rows.slice(1, -1).map(([number, name, mode, count]) => (
             <a key={number} href={`#presentation-track-${number}`} className="group rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-[#1869b4] hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1869b4]">
               <div className="flex items-center justify-between gap-2">
-                <span className="rounded-full bg-[#1869b4] px-3 py-1 text-xs font-bold text-white">Track {number}</span>
+                <span className={`rounded-full px-3 py-1 text-xs font-bold text-white ${trackColors[number] ?? "bg-[#1869b4]"}`}>Track {number}</span>
                 <ArrowDown className="h-4 w-4 text-[#1869b4] transition group-hover:translate-y-1" aria-hidden="true" />
               </div>
               <p className="mt-3 font-bold leading-snug text-gray-900">{name}</p>
@@ -165,7 +175,7 @@ export default function PresentationSchedule() {
 
         return (
           <section key={number} id={`presentation-track-${number}`} aria-labelledby={`presentation-track-title-${number}`} className="scroll-mt-4 overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
-            <header className="bg-[#1869b4] px-5 py-5 text-white sm:px-6">
+            <header className={`${trackColors[number] ?? "bg-[#1869b4]"} px-5 py-5 text-white sm:px-6`}>
               <p className="text-xs font-bold uppercase tracking-widest text-blue-100">{trackLabel} · {number === "04" ? "Offline" : "Online"}</p>
               <h4 id={`presentation-track-title-${number}`} className="mt-1 text-xl font-bold sm:text-2xl">{name}</h4>
             </header>
