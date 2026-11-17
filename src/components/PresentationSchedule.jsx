@@ -59,6 +59,7 @@ const presenterPhotos = {
   512: "/assets/img/authors-photo/optimized/paper-512.jpg",
 
   652: "/assets/img/authors-photo/optimized/paper-652.jpg",
+  363: "/assets/img/authors-photo/optimized/paper-363.jpg",
 };
 
 function ScheduleText({ text }) {
