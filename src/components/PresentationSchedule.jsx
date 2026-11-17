@@ -60,6 +60,10 @@ const presenterPhotos = {
 
   652: "/assets/img/authors-photo/optimized/paper-652.jpg",
   363: "/assets/img/authors-photo/optimized/paper-363.jpg",
+  599: "/assets/img/authors-photo/optimized/paper-599.jpg",
+  520: "/assets/img/authors-photo/optimized/paper-520.jpg",
+  658: "/assets/img/authors-photo/optimized/paper-658.jpg",
+  348: "/assets/img/authors-photo/optimized/paper-348.jpg",
 };
 
 function ScheduleText({ text }) {
